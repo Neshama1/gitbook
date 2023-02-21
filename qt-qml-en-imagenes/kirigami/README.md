@@ -18,7 +18,7 @@ ControlKit implementa estilo y la aplicación adaptación.
 
 <div>
 
-<figure><img src="../../.gitbook/assets/kirigami-calindori-desktop (1).png" alt=""><figcaption><p>Calindori</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/kirigami-calindori-desktop.png" alt=""><figcaption><p>Calindori</p></figcaption></figure>
 
  
 

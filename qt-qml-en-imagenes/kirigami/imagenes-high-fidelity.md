@@ -8,7 +8,7 @@ description: Encuentra imágenes de aplicaciones Kirigami con el estilo Brisa.
 
 <figure><img src="../../.gitbook/assets/kirigami-05-alligator-mobile.png" alt=""><figcaption><p>Alligator</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/kirigami-23-image.png" alt=""><figcaption><p>Kalendar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/kirigami-23-image (1).png" alt=""><figcaption><p>Kalendar</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/kirigami-21-image-12.png" alt=""><figcaption><p>Kalendar</p></figcaption></figure>
 
@@ -24,7 +24,7 @@ description: Encuentra imágenes de aplicaciones Kirigami con el estilo Brisa.
 
 <figure><img src="../../.gitbook/assets/kirigami-08-krecorder-4.png" alt=""><figcaption><p>Configuración de KRecorder</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/kirigami-09-neochat-2 (1).png" alt=""><figcaption><p>Configuración de NeoChat</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/kirigami-09-neochat-2 (2) (1).png" alt=""><figcaption><p>Configuración de NeoChat</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/kirigami-10-neochat-3.png" alt=""><figcaption><p>Configuración de NeoChat</p></figcaption></figure>
 

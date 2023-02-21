@@ -4,7 +4,7 @@ description: Mira imágenes de aplicaciones ControlKit
 
 # Imágenes High Fidelity
 
-<figure><img src="../../.gitbook/assets/controlkit-calendar.png" alt=""><figcaption><p>Calendar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/controlkit-calendar (1).png" alt=""><figcaption><p>Calendar</p></figcaption></figure>
 
 <figure><img src="https://d4.alternativeto.net/JK7Ey1lwHwuEkEVoaiXFk9A8UT816hwMrqN7V19lrVc/rs:fit:1200:1200:0/g:ce:0:0/YWJzOi8vZGlzdC9zL2ppbmdvc181OTM3NjhfZnVsbC5wbmc.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -23,4 +23,3 @@ description: Mira imágenes de aplicaciones ControlKit
 <figure><img src="https://tuxphones.com/content/images/size/w1000/2021/08/jingos_084022.png" alt=""><figcaption><p>Store es Plasma Discover</p></figcaption></figure>
 
 <figure><img src="https://tuxphones.com/content/images/size/w1000/2021/08/jingos-settings-appearance.png" alt=""><figcaption><p>Settings</p></figcaption></figure>
-
