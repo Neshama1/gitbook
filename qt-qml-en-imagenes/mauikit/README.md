@@ -34,5 +34,17 @@ El escritorio o interfaz para GNU/Linux KDE ha desarrollado componentes tecnoló
 ## Enlaces
 
 {% embed url="https://mauikit.org/" %}
+Maui Project
+{% endembed %}
 
 {% embed url="https://nxos.org" %}
+Nitrux
+{% endembed %}
+
+{% embed url="https://www.novaflowos.com" %}
+Nova Flow OS
+{% endembed %}
+
+{% embed url="https://api.kde.org/mauikit/index.html" %}
+Documentación de MauiKit Frameworks
+{% endembed %}
