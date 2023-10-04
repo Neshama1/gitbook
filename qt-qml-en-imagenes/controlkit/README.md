@@ -1,17 +1,18 @@
 ---
 description: >-
   Conjunto de componentes Qt Quick basado en Kirigami para crear aplicaciones
-  con una agradable experiencia de uso en cada dispositivo. Este proyecto se
-  encuentra descontinuado pero disponible.
+  con una agradable experiencia de uso en cada dispositivo.
 ---
 
 # ControlKit
 
-<figure><img src="https://scontent.fmad6-1.fna.fbcdn.net/v/t39.30808-6/233395495_280783353849538_1043223080096281201_n.jpg?stp=dst-jpg_p180x540&#x26;_nc_cat=100&#x26;ccb=1-7&#x26;_nc_sid=730e14&#x26;_nc_ohc=A95q9gMBYlUAX8zFNs6&#x26;_nc_ht=scontent.fmad6-1.fna&#x26;oh=00_AfC_qiRqGzW1JtaXNwMfVnu0UcVCG4K3s2Dhkvi7TXac7w&#x26;oe=63F3DF0A" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Aunque el proyecto original se encuentra descontinuado, su desarrollo ha sido retomado por el proyecto JingOS-Revival.
+{% endhint %}
 
 El excelente trabajo del equipo de JingOS ha transformado algunas aplicaciones Kirigami aplicando su propio estilo visual y añadiendo algo de adaptación.
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Calendar es la aplicación Kirigami Calindori </td><td><a href="../../.gitbook/assets/controlkit-calendar.png">controlkit-calendar.png</a></td></tr><tr><td>Calculator es Kalk</td><td><a href="../../.gitbook/assets/controlkit-calculator (2).webp">controlkit-calculator (2).webp</a></td></tr><tr><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Calendar es la aplicación Kirigami Calindori</td><td><a href="../../.gitbook/assets/controlkit-calendar (1).png">controlkit-calendar (1).png</a></td></tr><tr><td>Calculator es Kalk</td><td><a href="../../.gitbook/assets/controlkit-calculator (1).webp">controlkit-calculator (1).webp</a></td></tr><tr><td></td><td></td></tr></tbody></table>
 
 ## LGPL 2.0 or later
 
@@ -27,3 +28,6 @@ ControlKit
 Canal de YouTube de JingOS
 {% endembed %}
 
+{% embed url="https://github.com/JingOS-Revival" %}
+JingOS-Revival
+{% endembed %}
