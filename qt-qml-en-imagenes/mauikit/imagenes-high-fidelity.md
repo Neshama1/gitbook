@@ -19,3 +19,5 @@ description: Encuentra imágenes al detalle de las aplicaciones MauiKit
 <figure><img src="../../.gitbook/assets/index2.png" alt=""><figcaption><p>Index</p></figcaption></figure>
 
 <figure><img src="https://nxos.org/wp-content/uploads/2021/09/Screenshot_20210908_172102.png" alt=""><figcaption><p>NX Software Center</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Fiery.png" alt=""><figcaption><p>Fiery</p></figcaption></figure>
