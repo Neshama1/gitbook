@@ -38,3 +38,4 @@
     * [ToolBar](mauikit/controles/toolbar.md)
     * [Badge](mauikit/controles/badge.md)
     * [Holder](mauikit/controles/holder.md)
+    * [CollageItem](mauikit/controles/collageitem.md)
