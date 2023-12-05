@@ -36,3 +36,4 @@
     * [AppViews](mauikit/controles/appviews.md)
     * [TabBar](mauikit/controles/tabbar.md)
     * [ToolBar](mauikit/controles/toolbar.md)
+    * [Badge](mauikit/controles/badge.md)
