@@ -49,3 +49,7 @@ Maui.ApplicationWindow
 ```
 
 <figure><img src="../../.gitbook/assets/Controls-AppViews.jpg" alt=""><figcaption></figcaption></figure>
+
+## Propiedades
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classAppViews.html" %}
