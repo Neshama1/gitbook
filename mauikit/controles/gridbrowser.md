@@ -37,14 +37,12 @@ Maui.ApplicationWindow
                     anchors.fill: parent
                     anchors.margins: 10
                     radius: 4
-                    color: "pink"
+                    color: Maui.Theme.alternateBackgroundColor
                 }
             }
         }
     }
 }
-
-
 ```
 
 ```
@@ -52,7 +50,7 @@ horizontalScrollBarPolicy: ScrollBar.AsNeeded, ScrollBar.AlwaysOn, ScrollBar.Alw
 verticalScrollBarPolicy: ScrollBar.AsNeeded, ScrollBar.AlwaysOn, ScrollBar.AlwaysOff
 ```
 
-<figure><img src="../../.gitbook/assets/Controls-GridBrowser (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Controls-GridBrowser.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Propiedades
 
