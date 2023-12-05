@@ -26,4 +26,6 @@
     * [Aplicaciones Kirigami con otros estilos](qt-qml-en-imagenes/kirigami/aplicaciones-kirigami-con-otros-estilos.md)
     * [Imágenes High Fidelity](qt-qml-en-imagenes/kirigami/imagenes-high-fidelity.md)
     * [Estilo Windows 11 para Qt Quick Controls](qt-qml-en-imagenes/kirigami/estilo-windows-11-para-qt-quick-controls.md)
-* [MauiKit](mauikit.md)
+* [MauiKit](mauikit/README.md)
+  * [Controles](mauikit/controles/README.md)
+    * [ApplicationWindow](mauikit/controles/applicationwindow.md)
