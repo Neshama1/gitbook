@@ -57,3 +57,5 @@ Label {
 ## Propiedades
 
 {% embed url="https://api.kde.org/mauikit/mauikit/html/classSearchField.html" %}
+
+{% embed url="https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html" %}
