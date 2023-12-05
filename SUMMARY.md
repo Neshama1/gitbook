@@ -46,3 +46,4 @@
     * [ToolActions](mauikit/controles/toolactions.md)
     * [ToolButtonMenu](mauikit/controles/toolbuttonmenu.md)
     * [GridBrowser](mauikit/controles/gridbrowser.md)
+    * [ListBrowser](mauikit/controles/listbrowser.md)
