@@ -6,6 +6,10 @@ description: >-
 
 # MauiKit
 
+{% hint style="info" %}
+Antes de ejecutar el paso 1, efectúa "sudo zypper refresh" y actualiza tu sistema con los últimos paquetes. Instalar el paquete de desarrollo MauiKit sin encontrarse actualizado el sistema puede generar un sistema no arrancable.
+{% endhint %}
+
 #### 1. Instala patterns-kde-mauikit-stable\_devel\_mauikit\_frameworks con 1 Click Install.
 
 {% embed url="https://software.opensuse.org/package/patterns-kde-mauikit-stable_devel_mauikit_frameworks?search_term=patterns-kde-mauikit-stable_devel_mauikit_frameworks" fullWidth="false" %}
