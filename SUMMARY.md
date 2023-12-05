@@ -47,3 +47,4 @@
     * [ToolButtonMenu](mauikit/controles/toolbuttonmenu.md)
     * [GridBrowser](mauikit/controles/gridbrowser.md)
     * [ListBrowser](mauikit/controles/listbrowser.md)
+    * [ListItemTemplate](mauikit/controles/listitemtemplate.md)
