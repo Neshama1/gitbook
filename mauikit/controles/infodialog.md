@@ -40,3 +40,7 @@ MenuItem
 ```
 
 <figure><img src="../../.gitbook/assets/Controls-InfoDialog.jpg" alt=""><figcaption></figcaption></figure>
+
+## Propiedades
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classInfoDialog.html" %}
