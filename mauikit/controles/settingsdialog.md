@@ -114,3 +114,7 @@ La configuración es almacenada en el archivo:
 ```
 
 <figure><img src="../../.gitbook/assets/Controls-SettingsDialog.jpg" alt=""><figcaption></figcaption></figure>
+
+## Propiedades
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classSettingsDialog.html" %}
