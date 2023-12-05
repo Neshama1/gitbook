@@ -37,3 +37,4 @@
     * [TabBar](mauikit/controles/tabbar.md)
     * [ToolBar](mauikit/controles/toolbar.md)
     * [Badge](mauikit/controles/badge.md)
+    * [Holder](mauikit/controles/holder.md)
