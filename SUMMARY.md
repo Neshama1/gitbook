@@ -41,3 +41,4 @@
     * [CollageItem](mauikit/controles/collageitem.md)
     * [FloatingButton](mauikit/controles/floatingbutton.md)
     * [Chip](mauikit/controles/chip.md)
+    * [ColorsRow](mauikit/controles/colorsrow.md)
