@@ -30,3 +30,4 @@
   * [Controles](mauikit/controles/README.md)
     * [ApplicationWindow](mauikit/controles/applicationwindow.md)
     * [SettingsDialog](mauikit/controles/settingsdialog.md)
+    * [InfoDialog](mauikit/controles/infodialog.md)
