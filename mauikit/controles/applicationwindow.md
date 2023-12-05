@@ -51,7 +51,7 @@ Maui.ApplicationWindow
 
 ```
 
-showCSDControls: Muestra u oculta los botones de maximizar, minimizar y restaurar. Valores: true, false
+showCSDControls: Muestra u oculta los botones de minimizar, maximizar y cerrar. Valores: true, false
 
 headBar.visible Valores: true, false
 
