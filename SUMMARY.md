@@ -50,3 +50,4 @@
     * [ListItemTemplate](mauikit/controles/listitemtemplate.md)
     * [IconItem](mauikit/controles/iconitem.md)
     * [Notify](mauikit/controles/notify.md)
+    * [ShadowedRectangle](mauikit/controles/shadowedrectangle.md)
