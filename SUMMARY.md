@@ -51,3 +51,4 @@
     * [IconItem](mauikit/controles/iconitem.md)
     * [Notify](mauikit/controles/notify.md)
     * [ShadowedRectangle](mauikit/controles/shadowedrectangle.md)
+    * [Page](mauikit/controles/page.md)
