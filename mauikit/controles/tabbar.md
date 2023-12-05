@@ -44,3 +44,7 @@ Maui.ApplicationWindow
 ```
 
 <figure><img src="../../.gitbook/assets/Controls-TabBar.jpg" alt=""><figcaption></figcaption></figure>
+
+## Propiedades
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classTabBar.html" %}
