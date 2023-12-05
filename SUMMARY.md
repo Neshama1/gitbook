@@ -43,3 +43,4 @@
     * [Chip](mauikit/controles/chip.md)
     * [ColorsRow](mauikit/controles/colorsrow.md)
     * [CloseButton](mauikit/controles/closebutton.md)
+    * [ToolActions](mauikit/controles/toolactions.md)
