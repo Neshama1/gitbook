@@ -1,3 +1,9 @@
+---
+description: >-
+  Una ventana que proporciona algunas funciones básicas necesarias para la
+  mayoría de las aplicaciones.
+---
+
 # ApplicationWindow
 
 ```
