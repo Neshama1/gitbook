@@ -45,3 +45,4 @@
     * [CloseButton](mauikit/controles/closebutton.md)
     * [ToolActions](mauikit/controles/toolactions.md)
     * [ToolButtonMenu](mauikit/controles/toolbuttonmenu.md)
+    * [GridBrowser](mauikit/controles/gridbrowser.md)
