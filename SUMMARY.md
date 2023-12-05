@@ -52,3 +52,4 @@
     * [Notify](mauikit/controles/notify.md)
     * [ShadowedRectangle](mauikit/controles/shadowedrectangle.md)
     * [Page](mauikit/controles/page.md)
+    * [SearchField](mauikit/controles/searchfield.md)
