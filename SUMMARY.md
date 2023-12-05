@@ -34,3 +34,4 @@
     * [SideBarView](mauikit/controles/sidebarview.md)
     * [TabView](mauikit/controles/tabview.md)
     * [AppViews](mauikit/controles/appviews.md)
+    * [TabBar](mauikit/controles/tabbar.md)
