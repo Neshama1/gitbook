@@ -63,7 +63,7 @@ headBar.background Valores: Item / componente
 
 sideBar.preferredWidth: Establece anchura de la Side Bar. Ej: Maui.Style.units.gridUnit \* 15
 
-#### Establecer anchura y altura default.
+### Establecer anchura y altura default.
 
 ```
 import QtQuick.Window 2.15
@@ -73,7 +73,7 @@ width: Screen.desktopAvailableWidth - Screen.desktopAvailableWidth * 45 / 100
 height: Screen.desktopAvailableHeight - Screen.desktopAvailableHeight * 25 / 100
 ```
 
-#### Uso de Blur y transparencia.
+### Uso de Blur y transparencia.
 
 Este ejemplo aplica blur y transparencia en la Side Bar.
 
