@@ -29,3 +29,4 @@
 * [MauiKit](mauikit/README.md)
   * [Controles](mauikit/controles/README.md)
     * [ApplicationWindow](mauikit/controles/applicationwindow.md)
+    * [SettingsDialog](mauikit/controles/settingsdialog.md)
