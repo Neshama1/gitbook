@@ -63,6 +63,8 @@ headBar.background Valores: Item / componente
 
 sideBar.preferredWidth: Establece anchura de la Side Bar. Ej: Maui.Style.units.gridUnit \* 15
 
+<figure><img src="../../.gitbook/assets/Controls-ApplicationWindow.png" alt=""><figcaption></figcaption></figure>
+
 ### Establecer anchura y altura default.
 
 ```
@@ -103,5 +105,4 @@ background: Rectangle {
 }
 ```
 
-```
-```
+<figure><img src="../../.gitbook/assets/Controls-ApplicationWindow-Blur.png" alt=""><figcaption></figcaption></figure>
