@@ -4,6 +4,8 @@ description: Muestra elementos en una rejilla o cuadrícula.
 
 # GridBrowser
 
+
+
 ```
 import QtQuick 2.15
 import QtQuick.Controls 2.15
@@ -44,9 +46,13 @@ Maui.ApplicationWindow
     }
 }
 
+
 ```
 
-<figure><img src="../../.gitbook/assets/Controls-GridBrowser.jpg" alt=""><figcaption></figcaption></figure>
+```
+horizontalScrollBarPolicy: ScrollBar.AsNeeded, ScrollBar.AlwaysOn, ScrollBar.AlwaysOff
+verticalScrollBarPolicy: ScrollBar.AsNeeded, ScrollBar.AlwaysOn, ScrollBar.AlwaysOff
+```
 
 ## Propiedades
 
