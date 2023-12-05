@@ -72,3 +72,36 @@ import QtQuick.Window 2.15
 width: Screen.desktopAvailableWidth - Screen.desktopAvailableWidth * 45 / 100
 height: Screen.desktopAvailableHeight - Screen.desktopAvailableHeight * 25 / 100
 ```
+
+#### Uso de Blur y transparencia.
+
+Este ejemplo aplica blur y transparencia en la Side Bar.
+
+```
+// En Maui.ApplicationWindow
+
+Loader
+{
+    active: Maui.Handy.isLinux
+    asynchronous: true
+    sourceComponent: Maui.WindowBlur
+    {
+        view: root
+        geometry: Qt.rect(root.x, root.y, root.width, root.height)
+        enabled: true
+    }
+}
+
+// En sideBarContent: Maui.Page
+
+headBar.background: null
+
+background: Rectangle {
+    anchors.fill: parent
+    color: Maui.Theme.backgroundColor
+    opacity: 0.50
+}
+```
+
+```
+```
