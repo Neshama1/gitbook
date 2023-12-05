@@ -31,3 +31,5 @@
     * [ApplicationWindow](mauikit/controles/applicationwindow.md)
     * [SettingsDialog](mauikit/controles/settingsdialog.md)
     * [InfoDialog](mauikit/controles/infodialog.md)
+    * [SideBarView](mauikit/controles/sidebarview.md)
+    * [TabView](mauikit/controles/tabview.md)
