@@ -39,3 +39,4 @@
     * [Badge](mauikit/controles/badge.md)
     * [Holder](mauikit/controles/holder.md)
     * [CollageItem](mauikit/controles/collageitem.md)
+    * [FloatingButton](mauikit/controles/floatingbutton.md)
