@@ -33,3 +33,4 @@
     * [InfoDialog](mauikit/controles/infodialog.md)
     * [SideBarView](mauikit/controles/sidebarview.md)
     * [TabView](mauikit/controles/tabview.md)
+    * [AppViews](mauikit/controles/appviews.md)
