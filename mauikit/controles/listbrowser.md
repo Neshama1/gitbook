@@ -37,7 +37,7 @@ Maui.ApplicationWindow
                     anchors.fill: parent
                     anchors.margins: 0
                     radius: 4
-                    color: "pink"
+                    color: Maui.Theme.alternateBackgroundColor
                 }
             }
         }
