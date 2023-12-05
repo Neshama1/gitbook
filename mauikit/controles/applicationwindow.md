@@ -112,3 +112,7 @@ background: Rectangle {
 ```
 
 <figure><img src="../../.gitbook/assets/Controls-ApplicationWindow-Blur.png" alt=""><figcaption></figcaption></figure>
+
+## Propiedades
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classApplicationWindow.html" %}
