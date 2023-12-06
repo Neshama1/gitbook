@@ -50,6 +50,7 @@
     * [MenuItemActionRow](mauikit/controles/menuitemactionrow.md)
     * [ToolActions](mauikit/controles/toolactions.md)
     * [Page](mauikit/controles/page.md)
+    * [FileDialog](mauikit/controles/filedialog.md)
     * [Badge](mauikit/controles/badge.md)
     * [Holder](mauikit/controles/holder.md)
     * [FloatingButton](mauikit/controles/floatingbutton.md)
