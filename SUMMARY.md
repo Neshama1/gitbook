@@ -56,3 +56,4 @@
     * [SwipeBrowserDelegate](mauikit/controles/swipebrowserdelegate.md)
     * [PopupPage](mauikit/controles/popuppage.md)
     * [InputDialog](mauikit/controles/inputdialog.md)
+    * [SelectionBar](mauikit/controles/selectionbar.md)
