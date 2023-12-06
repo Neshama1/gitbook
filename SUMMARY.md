@@ -59,3 +59,4 @@
     * [SelectionBar](mauikit/controles/selectionbar.md)
     * [MenuItemActionRow](mauikit/controles/menuitemactionrow.md)
     * [GalleryRolItem](mauikit/controles/galleryrolitem.md)
+    * [SplitView](mauikit/controles/splitview.md)
