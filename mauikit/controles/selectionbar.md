@@ -1,5 +1,5 @@
 ---
-description: Barra de agrupación de elementos con lista de accciones.
+description: Barra de agrupación de elementos con lista de acciones.
 ---
 
 # SelectionBar
