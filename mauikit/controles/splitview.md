@@ -26,7 +26,7 @@ Maui.ApplicationWindow
                 Rectangle
                 {
                     anchors.fill: parent
-                    color: "mediumspringgreen"
+                    color: Maui.Theme.alternateBackgroundColor
                 }
             }
 
@@ -35,16 +35,15 @@ Maui.ApplicationWindow
                 Rectangle
                 {
                     anchors.fill: parent
-                    color: "deeppink"
+                    color: Maui.Theme.alternateBackgroundColor
                 }
             }
         }
     }
 }
-
 ```
 
-<figure><img src="../../.gitbook/assets/Controls-SplitView.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Controls-SplitView (1).jpg" alt=""><figcaption></figcaption></figure>
 
 ## Propiedades
 
