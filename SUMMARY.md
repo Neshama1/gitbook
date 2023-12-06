@@ -57,3 +57,4 @@
     * [PopupPage](mauikit/controles/popuppage.md)
     * [InputDialog](mauikit/controles/inputdialog.md)
     * [SelectionBar](mauikit/controles/selectionbar.md)
+    * [MenuItemActionRow](mauikit/controles/menuitemactionrow.md)
