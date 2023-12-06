@@ -55,3 +55,4 @@
     * [SearchField](mauikit/controles/searchfield.md)
     * [SwipeBrowserDelegate](mauikit/controles/swipebrowserdelegate.md)
     * [PopupPage](mauikit/controles/popuppage.md)
+    * [InputDialog](mauikit/controles/inputdialog.md)
