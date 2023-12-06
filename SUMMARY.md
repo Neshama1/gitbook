@@ -60,3 +60,4 @@
     * [MenuItemActionRow](mauikit/controles/menuitemactionrow.md)
     * [GalleryRolItem](mauikit/controles/galleryrolitem.md)
     * [SplitView](mauikit/controles/splitview.md)
+    * [Qt Quick Controls](mauikit/controles/qt-quick-controls.md)
