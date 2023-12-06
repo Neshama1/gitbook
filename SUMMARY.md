@@ -58,3 +58,4 @@
     * [InputDialog](mauikit/controles/inputdialog.md)
     * [SelectionBar](mauikit/controles/selectionbar.md)
     * [MenuItemActionRow](mauikit/controles/menuitemactionrow.md)
+    * [GalleryRolItem](mauikit/controles/galleryrolitem.md)
