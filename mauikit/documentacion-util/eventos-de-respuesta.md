@@ -41,7 +41,7 @@ Controles:
 Action
 {
     icon.name: "love"
-    onClicked: {        
+    onTriggered: {
     }
 }
 ```
