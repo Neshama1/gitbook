@@ -62,3 +62,5 @@
     * [ShadowedRectangle](mauikit/controles/shadowedrectangle.md)
     * [SearchField](mauikit/controles/searchfield.md)
     * [Qt Quick Controls](mauikit/controles/qt-quick-controls.md)
+  * [Documentación útil](mauikit/documentacion-util/README.md)
+    * [Colores](mauikit/documentacion-util/colores.md)
