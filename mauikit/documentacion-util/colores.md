@@ -76,6 +76,8 @@ Maui.ApplicationWindow
 
 ## Colores del sistema
 
+Los colores de sistema dependen del set de color establecido y del esquema seleccionado por el usuario de KDE.
+
 * Maui.Theme.textColor
 * Maui.Theme.disabledTextColor
 * Maui.Theme.highlightColor
