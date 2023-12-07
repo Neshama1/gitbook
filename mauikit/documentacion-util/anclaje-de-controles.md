@@ -115,6 +115,8 @@ anchors.right: rect2.left
 
 anchors.fill: rect1
 
+<figure><img src="../../.gitbook/assets/Util-Anclaje-05.jpg" alt=""><figcaption></figcaption></figure>
+
 ## Orden z.
 
 Define la posición por encima o por debajo de un control sobre los demás controles. Para el caso de "Anclaje 2" si se establece "z: 1" en rect1, éste será establecido encima de rect2.
