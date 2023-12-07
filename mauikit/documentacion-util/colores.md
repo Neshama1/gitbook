@@ -157,3 +157,10 @@ color: Qt.darker(Maui.Theme.backgroundColor, 2)
 color: Qt.lighter("#0FC092", 1.5)
 color: Qt.lighter("#550FC092", 1.5)    // Color con transparencia alpha 55 hexadecimal
 ```
+
+## Color en función de tema claro u oscuro
+
+```
+color: Maui.ColorUtils.brightnessForColor(Maui.Theme.backgroundColor) == Maui.ColorUtils.Light ? Qt.lighter(Maui.Theme.alternateBackgroundColor,1.01) : Qt.lighter(Maui.Theme.alternateBackgroundColor,1.08)
+```
+
