@@ -172,3 +172,33 @@ color: Maui.ColorUtils.brightnessForColor(Maui.Theme.backgroundColor) == Maui.Co
 Consulte la tabla de colores predefinidos.
 
 {% embed url="https://doc.qt.io/qt-5/qml-color.html" %}
+
+## Opacidad
+
+Los componentes QML incluyen la propiedad "opacity" que le permite especificar un grado de transparencia entre opaco (1) y transparente(0). Permite integrar un color o una imagen con el fondo tanto en temas claros como oscuros. Otras aplicaciones incluyen establecer fondo translúcido para tu aplicación o efectuar animación en la opacidad del control.
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    Maui.Page {
+        anchors.fill: parent
+        showCSDControls: true
+
+        Rectangle {
+            anchors.centerIn: parent
+            width: 200
+            height: 200
+            color: Maui.Theme.focusColor
+            radius: 4
+            opacity: 0.5
+        }
+    }
+}
+
+```
