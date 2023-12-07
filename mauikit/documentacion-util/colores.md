@@ -115,3 +115,43 @@ Maui.ApplicationWindow
 * Maui.Theme.tooltipBackgroundColor
 * Maui.Theme.tooltipAlternateBackgroundColor
 * Maui.Theme.tooltipHoverColor
+
+```
+color: "#0FC092"
+color: Maui.Theme.focusColor
+```
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    Maui.Page {
+        anchors.fill: parent
+        showCSDControls: true
+
+        Rectangle {
+            anchors.centerIn: parent
+            width: 200
+            height: 200
+            color: Maui.Theme.focusColor
+            radius: 4
+        }
+    }
+}
+```
+
+<figure><img src="../../.gitbook/assets/Util-Colores-2.jpg" alt=""><figcaption></figcaption></figure>
+
+## Aclarar u oscurecer un color.
+
+```
+color: Qt.lighter(Maui.Theme.backgroundColor, 1.2)
+color: Qt.darker(Maui.Theme.backgroundColor, 2)
+color: Qt.lighter("#0FC092", 1.5)
+color: Qt.lighter("#550FC092", 1.5)    // Color con transparencia alpha 55 hexadecimal
+```
