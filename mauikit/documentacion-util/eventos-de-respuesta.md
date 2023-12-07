@@ -86,3 +86,16 @@ Maui.ColorsRow
 }
 
 ```
+
+Slider
+
+```
+Slider {
+    from: 0
+    value: 0
+    to: 100
+    onMoved: {
+        console.info(value)
+    }
+}
+```
