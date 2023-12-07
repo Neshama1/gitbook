@@ -81,6 +81,68 @@ Maui.Theme.colorSet: Maui.Theme.Window
 
 <figure><img src="../../.gitbook/assets/Util-Colores-1.jpg" alt=""><figcaption></figcaption></figure>
 
+## Cambiar el color de una página.
+
+Establezca un "background" para la página y para la headBar.
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    Maui.SideBarView
+    {
+        anchors.fill: parent
+
+        sideBarContent: Maui.Page
+        {
+            // COLOR SET
+            Maui.Theme.colorSet: Maui.Theme.Window
+
+            anchors.fill: parent
+
+            headBar.leftContent: Maui.ToolButtonMenu
+            {
+                icon.name: "application-menu"
+                MenuItem
+                {
+                    text: "About"
+                    icon.name: "info-dialog"
+                    onTriggered: root.about()
+                }
+            }
+
+            headBar.rightContent: ToolButton
+            {
+                icon.name: "love"
+            }
+
+            headBar.background: Rectangle {
+                anchors.fill: parent
+                color: Qt.lighter(Maui.Theme.backgroundColor,1.035)
+            }
+
+            background: Rectangle {
+                anchors.fill: parent
+                color: Qt.lighter(Maui.Theme.backgroundColor,1.035)
+            }
+        }
+
+        Maui.Page
+        {
+            anchors.fill: parent
+            showCSDControls: true
+        }
+    }
+}
+```
+
+<figure><img src="../../.gitbook/assets/Util-Colores-3.jpg" alt=""><figcaption></figcaption></figure>
+
 ## Colores del sistema
 
 Los colores de sistema dependen del set de color establecido y del esquema seleccionado por el usuario de KDE.
