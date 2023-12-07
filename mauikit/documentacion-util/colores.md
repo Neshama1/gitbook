@@ -120,6 +120,9 @@ Los colores de sistema dependen del set de color establecido y del esquema selec
 
 ```
 color: "#0FC092"
+color: "#550FC092"    // Color con transparencia alpha 55 hexadecimal
+color: "transparent"
+color: "mediumspringgreen"
 color: Maui.Theme.focusColor
 ```
 
@@ -155,7 +158,7 @@ Maui.ApplicationWindow
 color: Qt.lighter(Maui.Theme.backgroundColor, 1.2)
 color: Qt.darker(Maui.Theme.backgroundColor, 2)
 color: Qt.lighter("#0FC092", 1.5)
-color: Qt.lighter("#550FC092", 1.5)    // Color con transparencia alpha 55 hexadecimal
+color: Qt.lighter("#550FC092", 1.5)
 ```
 
 ## Color en función de tema claro u oscuro
