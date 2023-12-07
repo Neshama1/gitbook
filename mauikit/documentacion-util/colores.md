@@ -69,10 +69,17 @@ Maui.ApplicationWindow
         }
     }
 }
-
 ```
 
 <figure><img src="../../.gitbook/assets/Util-Colores.jpg" alt=""><figcaption></figcaption></figure>
+
+Si establecemos:
+
+```
+Maui.Theme.colorSet: Maui.Theme.Window
+```
+
+<figure><img src="../../.gitbook/assets/Util-Colores-1.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Colores del sistema
 
