@@ -164,3 +164,8 @@ color: Qt.lighter("#550FC092", 1.5)    // Color con transparencia alpha 55 hexad
 color: Maui.ColorUtils.brightnessForColor(Maui.Theme.backgroundColor) == Maui.ColorUtils.Light ? Qt.lighter(Maui.Theme.alternateBackgroundColor,1.01) : Qt.lighter(Maui.Theme.alternateBackgroundColor,1.08)
 ```
 
+## Colores predefinidos
+
+Consulte la tabla de colores predefinidos.
+
+{% embed url="https://doc.qt.io/qt-5/qml-color.html" %}
