@@ -148,6 +148,7 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: {
+            console.info("evento de ratón pulsado")
         }
     }
 }
