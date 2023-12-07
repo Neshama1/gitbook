@@ -65,3 +65,4 @@
   * [Documentación útil](mauikit/documentacion-util/README.md)
     * [Colores](mauikit/documentacion-util/colores.md)
     * [Anclaje de controles](mauikit/documentacion-util/anclaje-de-controles.md)
+    * [Eventos de respuesta](mauikit/documentacion-util/eventos-de-respuesta.md)
