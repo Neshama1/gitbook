@@ -188,15 +188,17 @@ Maui.ApplicationWindow
 
     Maui.Page {
         anchors.fill: parent
+
         showCSDControls: true
 
-        Rectangle {
+        Maui.IconItem
+        {
             anchors.centerIn: parent
-            width: 200
-            height: 200
-            color: Maui.Theme.focusColor
-            radius: 4
-            opacity: 0.5
+            imageSource: "https://upload.wikimedia.org/wikipedia/commons/8/8d/KDE_logo.svg"
+            imageSizeHint: 200
+            maskRadius: Maui.Style.radiusV
+            fillMode: Image.PreserveAspectCrop
+            opacity: 0.04
         }
     }
 }
