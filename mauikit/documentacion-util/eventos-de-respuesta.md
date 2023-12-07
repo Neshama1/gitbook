@@ -99,3 +99,29 @@ Slider {
     }
 }
 ```
+
+Spinbox
+
+```
+SpinBox {
+    from: 5
+    to: 500
+    value: 100
+
+    onValueModified: {
+        console.info(value)
+    }
+}
+```
+
+Switch
+
+```
+Switch {
+    checkable: true
+    checked: fileIndexing ? true : false
+    onToggled: {
+        console.info(visualPosition) // 0 ó 1
+    }
+}
+```
