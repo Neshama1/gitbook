@@ -11,6 +11,6 @@ Las aplicaciones MauiKit y Qt/QML operan de este modo:
 
 Tenga en cuenta:
 
-* Aquello que defina en main.qml es definido globalmente, siendo disponible en cualquier fichero qml.
+* Aquello que defina en **main.qml** es definido **globalmente**, siendo disponible en cualquier fichero qml.
 * Aquello que defina en otro archivo qml es definido localmente.
 
