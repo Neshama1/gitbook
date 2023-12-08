@@ -163,3 +163,83 @@ Maui.Page
 <figure><img src="../../.gitbook/assets/Doc-Util-Animations.jpg" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FSXzvkb46qwM12b5VSmwp%2FDoc-Util-Animations.mp4?alt=media&token=c733f152-d9da-4d6a-840b-5fc6202e4057" %}
+
+**Efectuar una animación un tiempo después de iniciar la aplicación.**
+
+Sustituye Home.qml
+
+```
+// Home.qml
+
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.Page
+{
+    id: page
+
+    headBar.visible: false
+
+    opacity: 0
+
+    Component.onCompleted: {
+        animationTimer.start()
+    }
+
+    Timer {
+        id: animationTimer
+        interval: 1500; running: false; repeat: false
+        onTriggered: {
+            opacityAnimation.start()
+        }
+    }
+
+    PropertyAnimation {
+        id: opacityAnimation
+        target: page
+        properties: "opacity"
+        from: 0
+        to: 1.0
+        duration: 500
+
+        // Puedes establecer una curva de animación y modificar la intensidad de actuación:
+        // easing.type: Easing.InBack
+        // easing.overshoot: 10
+    }
+
+    Maui.SectionGroup
+    {
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.margins: 20
+        height: 50 * 3
+
+        title: i18n("General")
+        description: i18n("Configure the behaviour")
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Desktop search")
+            label2.text: i18n("Enable file indexing")
+            Switch {
+            }
+        }
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Global scale")
+            label2.text: i18n("Display configuration")
+            SpinBox {
+                id: spinBox
+                from: 0
+                to: 100
+                value: 50
+            }
+        }
+    }
+}
+```
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FN55gmPFXiYDzf8YkLbdP%2FDoc-Util-Animation-Timer.mp4?alt=media&token=0bb3ea0c-d4b6-46a8-9edf-ad437b20336d" %}
