@@ -31,6 +31,14 @@ color: luminance <= 0.5 ? "deeppink" : "mediumspringgreen"
 ```
 
 ```
+property bool condition1: true
+property bool condition2: true
+if (luminance > 0.5 && luminance < 0.8)        // Y: deben cumplirse ambos
+if (condition1 == true || condition2 == true)  // O: debe cumplirse 1 u otro 
+if (condition1 || condition2)
+```
+
+```
 property real luminance
 color: {
     if (luminance > 0.5) {
@@ -40,14 +48,6 @@ color: {
         return "deeppink"
     }
 }
-```
-
-```
-property bool condition1: true
-property bool condition2: true
-if (luminance > 0.5 && luminance < 0.8)        // Y: deben cumplirse ambos
-if (condition1 == true || condition2 == true)  // O: debe cumplirse 1 u otro 
-if (condition1 || condition2)
 ```
 
 ```
