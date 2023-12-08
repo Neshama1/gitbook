@@ -19,6 +19,7 @@ Tenga en cuenta:
 Debe entender:
 
 * Puede declarar propiedades en la definición del componente QML, pero no en los eventos de respuesta onClicked, onTriggered, etc: property string myText.
+* Es posible acceder o modificar valores de propiedades en los eventos de respuesta.
 * Dentro de un evento de respuesta onClicked declare variables tipo "var" si es necesario, que pueden tomar cualquier valor.
 * Convierta de var a string con myVar.toString().
 * En la definición del componente se iguala con ":".
