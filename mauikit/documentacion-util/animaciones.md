@@ -58,7 +58,8 @@ Maui.ApplicationWindow
         {
             anchors.fill: parent
 
-            headBar.visible: false
+            showCSDControls: true
+            headBar.background: null
 
             StackView {
                 id: stackView
@@ -68,7 +69,6 @@ Maui.ApplicationWindow
         }
     }
 }
-
 ```
 
 ```
@@ -82,8 +82,7 @@ Maui.Page
 {
     id: page
 
-    showCSDControls: true
-    headBar.background: null
+    headBar.visible: false
 
     Component.onCompleted: {
         opacityAnimation.start()
@@ -163,4 +162,4 @@ Maui.Page
 
 <figure><img src="../../.gitbook/assets/Doc-Util-Animations.jpg" alt=""><figcaption></figcaption></figure>
 
-{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FzRc7RiGKx4eVLt722vNL%2FDoc-Util-Animations.mp4?alt=media&token=4ffc8015-03d7-4140-a8f1-d5abcde4aab9" %}
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FSXzvkb46qwM12b5VSmwp%2FDoc-Util-Animations.mp4?alt=media&token=c733f152-d9da-4d6a-840b-5fc6202e4057" %}
