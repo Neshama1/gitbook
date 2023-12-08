@@ -243,3 +243,83 @@ Maui.Page
 ```
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FN55gmPFXiYDzf8YkLbdP%2FDoc-Util-Animation-Timer.mp4?alt=media&token=0bb3ea0c-d4b6-46a8-9edf-ad437b20336d" %}
+
+**Efectuar una animación cuando la propiedad cambia.**
+
+Sustituye Home.qml
+
+```
+// Home.qml
+
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.Page
+{
+    id: page
+
+    headBar.visible: false
+
+    scale: 0.93
+    opacity: 0
+
+    Component.onCompleted: {
+        scale = 1.0
+        opacity = 1.0
+    }
+
+    Behavior on scale {
+        NumberAnimation {
+            duration: 3000
+            easing.type: Easing.OutExpo
+        }
+    }
+
+    Behavior on opacity {
+        NumberAnimation { duration: 3000 }
+    }
+
+    Maui.SectionGroup
+    {
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.margins: 20
+        height: 50 * 3
+
+        title: i18n("General")
+        description: i18n("Configure the behaviour")
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Desktop search")
+            label2.text: i18n("Enable file indexing")
+            Switch {
+            }
+        }
+
+        Maui.SectionItem
+        {
+            label1.text:  i18n("Global scale")
+            label2.text: i18n("Display configuration")
+            SpinBox {
+                id: spinBox
+                from: 0
+                to: 100
+                value: 50
+
+                property int newValue
+                property real newVar: 2.1234
+
+                onValueModified: {
+                    var myVar = value
+                    console.info(newVar)
+                }
+            }
+        }
+    }
+}
+```
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FzIMkQfd61MKIQEHhnJk2%2FDoc-Util-Animation-Behavior.mp4?alt=media&token=6a432c9f-df76-41fa-9634-4ffec77b60e0" %}

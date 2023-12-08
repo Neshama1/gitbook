@@ -44,5 +44,6 @@ property int myNumber: 50
 property bool myValue: false    // false, true
 property real myNum1: 2.1547
 property double myNum2: 2.1547
+property color mycolor: "#9333b1"
 ```
 
