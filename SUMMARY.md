@@ -63,6 +63,7 @@
     * [SearchField](mauikit/controles/searchfield.md)
     * [Qt Quick Controls](mauikit/controles/qt-quick-controls.md)
   * [Documentación útil](mauikit/documentacion-util/README.md)
+    * [Aclaración](mauikit/documentacion-util/aclaracion.md)
     * [Colores](mauikit/documentacion-util/colores.md)
     * [Anclaje de controles](mauikit/documentacion-util/anclaje-de-controles.md)
     * [Eventos de respuesta](mauikit/documentacion-util/eventos-de-respuesta.md)
