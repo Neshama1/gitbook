@@ -20,6 +20,7 @@ Añade main.qml, Home.qml y qml.qrc. El código para efectuar la animación se e
 
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Window 2.15
 import org.mauikit.controls 1.3 as Maui
 
 Maui.ApplicationWindow
