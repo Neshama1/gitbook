@@ -69,3 +69,4 @@
     * [Anclaje de controles](mauikit/documentacion-util/anclaje-de-controles.md)
     * [Eventos de respuesta](mauikit/documentacion-util/eventos-de-respuesta.md)
     * [Animaciones](mauikit/documentacion-util/animaciones.md)
+    * [Efectos](mauikit/documentacion-util/efectos.md)
