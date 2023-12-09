@@ -64,7 +64,7 @@ GaussianBlur {
 
 ## Tipos
 
-Consulte para más detalle:
+Consulte:
 
 {% embed url="https://doc.qt.io/qt-5/qtgraphicaleffects-qmlmodule.html" %}
 
