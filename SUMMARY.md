@@ -70,3 +70,4 @@
     * [Eventos de respuesta](mauikit/documentacion-util/eventos-de-respuesta.md)
     * [Animaciones](mauikit/documentacion-util/animaciones.md)
     * [Efectos](mauikit/documentacion-util/efectos.md)
+    * [Conectar funcionalidad C++ con la interfaz QML.](mauikit/documentacion-util/conectar-funcionalidad-c++-con-la-interfaz-qml..md)
