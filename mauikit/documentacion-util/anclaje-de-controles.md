@@ -105,8 +105,8 @@ anchors.horizontalCenter: parent.horizontalCenter
 **Anclaje 4.**
 
 ```
-anchors.top: rect2.bottom
-anchors.right: rect2.left
+anchors.top: rect1.bottom
+anchors.right: rect1.left
 ```
 
 <figure><img src="../../.gitbook/assets/Util-Anclaje-04.jpg" alt=""><figcaption></figcaption></figure>
