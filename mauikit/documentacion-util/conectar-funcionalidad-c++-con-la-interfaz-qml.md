@@ -1,12 +1,22 @@
 ---
 description: >-
   Desde QML puede acceder a cada "propiedad" definida en su funcionalidad ó
-  código C++.
+  código C++. El código QML final de acceso quedará:
 ---
 
-# Conectar funcionalidad C++ con la interfaz QML.
+# Conectar funcionalidad C++ con la interfaz QML
 
-### 1. Añade el siguiente código a un nuevo archivo (KDevelop > File > New) y guardalo en tu aplicación MauiKit en myapp/src/code/backend.h:
+```
+Backend.introductionText
+```
+
+Otra forma de nombrar funcionalidad en otro ejemplo distinto podría ser:
+
+```
+Users.list
+```
+
+### 1. Añade el siguiente código a un nuevo archivo (KDevelop > File > New) y guardalo en tu aplicación MauiKit en myapp/src/code/backend.h:&#x20;
 
 ```
 #pragma once
@@ -95,8 +105,6 @@ No se confunda con myapp/CMakeLists.txt
 
 El archivo correcto es myapp/src/CMakeLists.txt
 {% endhint %}
-
-
 
 ### 6. Añada en el fichero qml en el que quiera acceder a la funcionalidad C++ el siguiente código.
 
