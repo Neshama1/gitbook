@@ -61,6 +61,7 @@
     * [Notify](mauikit/controles/notify.md)
     * [ShadowedRectangle](mauikit/controles/shadowedrectangle.md)
     * [SearchField](mauikit/controles/searchfield.md)
+    * [Flow](mauikit/controles/flow.md)
     * [Qt Quick Controls](mauikit/controles/qt-quick-controls.md)
   * [Documentación útil](mauikit/documentacion-util/README.md)
     * [Aclaración](mauikit/documentacion-util/aclaracion.md)
