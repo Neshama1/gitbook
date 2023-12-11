@@ -1,13 +1,12 @@
 ---
-description: >-
-  Envíe señales de un punto a otro. Útil para informar el fín de una tarea como
-  instalación terminada o para informar de fin de reproducción de una canción o
-  video.
+description: Envíe señales de un punto a otro.
 ---
 
 # Enviar señales
 
 ## De código C++ a código QML.
+
+Útil para informar el fín de una tarea como instalación terminada o para informar de fin de reproducción de una canción o video.
 
 1\. Siga los pasos de 1 a 5 indicados en:
 
