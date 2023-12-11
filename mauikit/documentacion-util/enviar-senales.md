@@ -248,7 +248,7 @@ Maui.ApplicationWindow
 
 <figure><img src="../../.gitbook/assets/Signal-QML-a-QML.jpg" alt=""><figcaption></figcaption></figure>
 
-## De un objeto C++ a otro objeto C++. Ejemplo con hilo asíncrono.
+## De un objeto C++ a otro objeto C++. Ejemplo con un hilo asíncrono.
 
 En este ejemplo se añade un hilo asíncrono que permita ejecutar una tarea sin congelar la interfaz de la aplicación. Para este caso se ejecuta simplemente una espera de 5 segundos. Una vez finalice el hilo asíncrono, una señal es enviada del objeto "asyncThread" y recibida en el objeto "backend" por el correspondiente slot.
 
@@ -441,7 +441,7 @@ Compile y ejecute Debug en KDevelop. La salida de Debug en el panel inferior inf
 entra en slot: tarea asíncrona completada
 ```
 
-## De código C++ a código QML. Ejemplo con hilo asíncrono.
+## De código C++ a código QML. Ejemplo con un hilo asíncrono.
 
 En este ejemplo se inicia un hilo asíncrono desde la interfaz QML de la aplicación, se envía una señal finalizado el hilo tras 5 segundos, siendo recibida en la interfaz QML.
 
