@@ -247,3 +247,181 @@ Maui.ApplicationWindow
 ```
 
 <figure><img src="../../.gitbook/assets/Signal-QML-a-QML.jpg" alt=""><figcaption></figcaption></figure>
+
+## De un objeto C++ a otro objeto C++.&#x20;
+
+En este ejemplo se añade un hilo asíncrono que permita ejecutar una tarea sin congelar la interfaz de la aplicación. Para este caso se ejecuta simplemente una espera de 5 segundos. Una vez finalice el hilo asíncrono, una señal es enviada del objeto "asyncThread" y recibida en el objeto "backend" por el correspondiente slot.
+
+1\. Siga los pasos de 1 a 5 indicados en:
+
+{% content-ref url="conectar-funcionalidad-c++-con-la-interfaz-qml.md" %}
+[conectar-funcionalidad-c++-con-la-interfaz-qml.md](conectar-funcionalidad-c++-con-la-interfaz-qml.md)
+{% endcontent-ref %}
+
+2\. Añade el archivo myapp/src/code/async.h
+
+```
+// async.h
+
+#ifndef ASYNC_H
+#define ASYNC_H
+
+#include <QThread>
+#include <QObject>
+
+class Async : public QThread
+{
+    Q_OBJECT
+
+public:
+    Async();
+    ~Async();
+
+    void run();
+
+signals:
+    void taskCompleted(const int &error);
+};
+
+#endif // ASYNC_H
+```
+
+3\. Añade el archivo myapp/src/code/async.cpp
+
+<pre><code><strong>// async.cpp
+</strong><strong>
+</strong><strong>#include "async.h"
+</strong>#include &#x3C;QDebug>
+#include &#x3C;QtCore>
+
+Async::Async()
+{
+}
+
+Async::~Async()
+{
+}
+
+void Async::run()
+{
+    int error = 0;
+
+    QThread::msleep(5000);
+
+    taskCompleted(error);
+}
+</code></pre>
+
+3\. Añade a myapp/src/code/backend.h:
+
+```
+#include "async.h"
+Async asyncThread;
+```
+
+```
+#pragma once
+
+#include <QObject>
+#include <QDebug>
+#include <QVariantList>
+#include "async.h"
+
+class Backend : public QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(QVariantList users READ users WRITE setUsers NOTIFY usersChanged)
+
+public:
+    explicit Backend(QObject *parent = nullptr);
+
+public:
+    QVariantList users() const;
+    void setUsers(const QVariantList &users);
+    Q_SIGNAL void usersChanged();
+
+private:
+    QVariantList m_users;
+    Async asyncThread;
+
+private slots:
+    void on_UsersChanged();
+    void on_TaskCompleted(const int &error);
+
+signals:
+    void updated(QString data);
+};
+
+```
+
+4\. Añade a myapp/src/code/backend.cpp:
+
+```
+connect(&asyncThread, SIGNAL(taskCompleted(const int &)),this, SLOT(on_TaskCompleted(const int &)));
+
+asyncThread.start();
+
+void Backend::on_TaskCompleted(const int &error)
+{
+    qDebug() << "entra en slot: tarea asíncrona completada";
+}
+```
+
+```
+#include "backend.h"
+#include <QVariantMap>
+
+Backend::Backend(QObject *parent)
+    : QObject(parent)
+{
+    connect(this, SIGNAL(usersChanged()), this, SLOT(on_UsersChanged()));
+    connect(&asyncThread, SIGNAL(taskCompleted(const int &)),this, SLOT(on_TaskCompleted(const int &)));
+
+    QVariantMap user1;
+    user1["name"] = "John";
+    user1["subname"] = "Candy";
+    user1["active"] = "false";
+    user1["age"] = 43;
+
+    QVariantMap user2;
+    user2["name"] = "Errol";
+    user2["subname"] = "Flynn";
+    user2["active"] = "false";
+    user2["age"] = 50;
+
+    m_users.append(user1);
+    m_users.append(user2);
+
+    asyncThread.start();
+}
+
+QVariantList Backend::users() const
+{
+    return m_users;
+}
+
+void Backend::setUsers(const QVariantList &users)
+{
+    m_users = users;
+    Q_EMIT usersChanged();
+}
+
+void Backend::on_UsersChanged()
+{
+    qDebug() << "entra en slot: user changed";
+}
+
+void Backend::on_TaskCompleted(const int &error)
+{
+    qDebug() << "entra en slot: tarea asíncrona completada";
+}
+
+```
+
+**Resultado**
+
+Compile y ejecute Debug en KDevelop. La salida de Debug en el panel inferior informará tras 5 segundos:
+
+```
+entra en slot: tarea asíncrona completada
+```
