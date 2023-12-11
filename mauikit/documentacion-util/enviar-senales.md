@@ -248,7 +248,7 @@ Maui.ApplicationWindow
 
 <figure><img src="../../.gitbook/assets/Signal-QML-a-QML.jpg" alt=""><figcaption></figcaption></figure>
 
-## De un objeto C++ a otro objeto C++.&#x20;
+## De un objeto C++ a otro objeto C++. Ejemplo con hilo asíncrono.
 
 En este ejemplo se añade un hilo asíncrono que permita ejecutar una tarea sin congelar la interfaz de la aplicación. Para este caso se ejecuta simplemente una espera de 5 segundos. Una vez finalice el hilo asíncrono, una señal es enviada del objeto "asyncThread" y recibida en el objeto "backend" por el correspondiente slot.
 
