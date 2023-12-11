@@ -212,3 +212,29 @@ Maui.ApplicationWindow
 ```
 
 <figure><img src="../../.gitbook/assets/Modelo-Delegado-Ejemplo-2.png" alt=""><figcaption></figcaption></figure>
+
+## Componentes modelo-delegado.
+
+Maui.ListBrowser
+
+{% content-ref url="../controles/listbrowser.md" %}
+[listbrowser.md](../controles/listbrowser.md)
+{% endcontent-ref %}
+
+Maui.GridBrowser
+
+{% content-ref url="../controles/gridbrowser.md" %}
+[gridbrowser.md](../controles/gridbrowser.md)
+{% endcontent-ref %}
+
+ListView
+
+{% embed url="https://doc.qt.io/qt-5/qml-qtquick-listview.html" %}
+
+GridView
+
+{% embed url="https://doc.qt.io/qt-5/qml-qtquick-gridview.html" %}
+
+Repeater
+
+{% embed url="https://doc.qt.io/qt-5/qml-qtquick-repeater.html" %}
