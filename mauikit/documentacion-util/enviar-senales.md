@@ -418,6 +418,21 @@ void Backend::on_TaskCompleted(const int &error)
 
 ```
 
+5\. Añade en myapp/src/CMakeLists.txt:
+
+```
+code/async.cpp
+```
+
+```
+set(project_SRCS
+    code/main.cpp
+    assets/assets.qrc
+    code/backend.cpp
+    code/async.cpp
+    )
+```
+
 **Resultado**
 
 Compile y ejecute Debug en KDevelop. La salida de Debug en el panel inferior informará tras 5 segundos:
@@ -425,3 +440,13 @@ Compile y ejecute Debug en KDevelop. La salida de Debug en el panel inferior inf
 ```
 entra en slot: tarea asíncrona completada
 ```
+
+## De código C++ a código QML. Ejemplo con hilo asíncrono.
+
+En este ejemplo se inicia un hilo asíncrono desde la interfaz QML de la aplicación, se envía una señal finalizado el hilo tras 5 segundos, siendo recibida en la interfaz QML.
+
+1\. Siga los pasos de 1 a 5 indicados en:
+
+{% content-ref url="conectar-funcionalidad-c++-con-la-interfaz-qml.md" %}
+[conectar-funcionalidad-c++-con-la-interfaz-qml.md](conectar-funcionalidad-c++-con-la-interfaz-qml.md)
+{% endcontent-ref %}
