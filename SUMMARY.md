@@ -72,3 +72,4 @@
     * [Animaciones](mauikit/documentacion-util/animaciones.md)
     * [Efectos](mauikit/documentacion-util/efectos.md)
     * [Conectar funcionalidad C++ con la interfaz QML](mauikit/documentacion-util/conectar-funcionalidad-c++-con-la-interfaz-qml.md)
+    * [Componentes modelo-delegado o listas y cuadrículas](mauikit/documentacion-util/componentes-modelo-delegado-o-listas-y-cuadriculas.md)
