@@ -39,7 +39,6 @@ Maui.ApplicationWindow
 
             headBar.visible: false
 
-
             ListModel {
             id: mainMenuModel
                 ListElement { name: "General behavior" ; description: "Configure other options" ; icon: "love" }
@@ -99,6 +98,10 @@ Maui.ApplicationWindow
             showCSDControls: true
 
             headBar.background: null
+
+            StackView {
+                id: stackView
+            }
         }
     }
 }
