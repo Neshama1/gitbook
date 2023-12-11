@@ -159,7 +159,7 @@ Maui.ApplicationWindow
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2FCpfvnS9ZEINUtzUKtR1B%2FConectar-C%2B%2B-QML.mp4?alt=media&token=5e2e776c-a6cf-43de-b0cf-f88299153af5" %}
 
-## Pasar múltiples datos en una sola propiedad desde código C++ a la interfaz QML.
+## Pasar múltiples datos en una sola propiedad desde código C++ a la interfaz QML: QVariantList.
 
 En el siguiente ejemplo se crea la propiedad "users" conteniendo "name", "surname", "active" y "age". La propiedad "users" será leída y escrita desde QML.
 

@@ -142,3 +142,14 @@ Un código usando StackView se muestra en:
 {% content-ref url="animaciones.md" %}
 [animaciones.md](animaciones.md)
 {% endcontent-ref %}
+
+## Ejemplo 2. Rellenando el modelo con datos procedentes de código o funcionalidad C++. Mostrar una lista de usuarios.
+
+Siga los pasos de 1 a 5 indicados en:
+
+{% content-ref url="conectar-funcionalidad-c++-con-la-interfaz-qml.md" %}
+[conectar-funcionalidad-c++-con-la-interfaz-qml.md](conectar-funcionalidad-c++-con-la-interfaz-qml.md)
+{% endcontent-ref %}
+
+sustituyendo los pasos 1 y 2 por los indicados en el ejemplo final con **QVariantList**.
+
