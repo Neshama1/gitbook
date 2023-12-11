@@ -15,7 +15,7 @@ Se muestran 2 ejemplos:
 1. Rellenando el modelo de datos directamente con información definida en el proprio fichero QML.
 2. Rellenando el modelo de datos con información procedente de código o funcionalidad C++.
 
-## Ejemplo 1. Rellenando el modelo con datos definidos en el proprio fichero QML. Mostrar un menú para Side Bar.
+## Ejemplo 1. Rellenando el modelo con datos definidos en el propio fichero QML. Mostrar un menú para Side Bar.
 
 Añada el siguiente código a **main.qml**:
 
