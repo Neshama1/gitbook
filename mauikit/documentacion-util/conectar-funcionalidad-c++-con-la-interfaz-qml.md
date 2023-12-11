@@ -286,3 +286,24 @@ Maui.ApplicationWindow
 ```
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FED1v8xhNFPWKlgOCuryr%2Fuploads%2Fy1Mk32MTaWWPtAsBVYFt%2FConectar-C%2B%2B-QML-Mutliples-datos-en-una-propiedad.mp4?alt=media&token=964f6482-ac09-4296-a0f0-1097681c5c42" %}
+
+Para leer desde C++ el objeto QVariantList "users" y acceder a la información de cada usuario puede usar el siguiente código donde desee. En este caso en la función de respuesta a usuario cambiado:
+
+```
+void Backend::on_UsersChanged()
+{
+    qDebug() << "entra en slot: user changed";
+
+    QVariantMap user = m_users[0].toMap();
+    QString name = user["name"].toString();
+
+    qDebug() << name;
+}
+```
+
+La salida de consola de KDevelop muestra (iniciar ejecución pulsando click sobre botón Debug):
+
+```
+entra en slot: user changed
+"Johnny"
+```
