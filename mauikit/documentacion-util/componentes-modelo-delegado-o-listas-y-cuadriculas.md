@@ -137,3 +137,8 @@ sideBarContent: Maui.Page
 }
 ```
 
+Un código usando StackView se muestra en:
+
+{% content-ref url="animaciones.md" %}
+[animaciones.md](animaciones.md)
+{% endcontent-ref %}
