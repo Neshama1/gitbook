@@ -307,3 +307,35 @@ La salida de consola de KDevelop muestra (iniciar ejecución pulsando click sobr
 entra en slot: user changed
 "Johnny"
 ```
+
+## Invocar funciones C++ desde QML.
+
+La macro Q\_INVOKABLE permite invocar una función C++ desde código de interfaz QML.
+
+### 1. Añade en myapp/src/code/backend.h:
+
+```
+public:
+    Q_INVOKABLE void setOption(QString option);
+```
+
+### 2. Añade en myapp/src/code/backend.cpp:
+
+```
+void Backend::setOption(QString option)
+{
+    qDebug() << option;
+}
+```
+
+### 3. Añade en main.qml:
+
+```
+headBar.leftContent: ToolButton {
+    icon.name: "configure"
+    flat: true
+    onClicked: {
+        Backend.setOption("option 1")
+    }
+}
+```
