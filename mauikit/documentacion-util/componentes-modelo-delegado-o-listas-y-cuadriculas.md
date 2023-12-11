@@ -108,3 +108,32 @@ Maui.ApplicationWindow
 ```
 
 <figure><img src="../../.gitbook/assets/Modelo-Delegado-Ejemplo-1.png" alt=""><figcaption></figcaption></figure>
+
+currentIndex le permite establecer como seleccionado el correspondiente elemento al pulsar el mismo, mostrándolo con el color de selección, en este caso azul.
+
+Si no desea seleccionar ningún elemento:
+
+```
+currentIndex: -1
+```
+
+También puede mostrar múltiples páginas de menú usando un StackView:
+
+```
+sideBarContent: Maui.Page
+{
+    Maui.Theme.colorSet: Maui.Theme.Window
+    anchors.fill: parent
+
+    headBar.visible: false
+
+    Component.onCompleted: {
+        stackMenu.push("qrc:/Menu1.qml")
+    }
+
+    StackView {
+        id: stackMenu
+    }
+}
+```
+
