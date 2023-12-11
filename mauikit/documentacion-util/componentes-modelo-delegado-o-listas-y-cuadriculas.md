@@ -145,7 +145,7 @@ Un código usando StackView se muestra en:
 
 ## Ejemplo 2. Rellenando el modelo con datos procedentes de código o funcionalidad C++. Mostrar una lista de usuarios.
 
-Siga los pasos de 1 a 5 indicados en:
+1\. Siga los pasos de 1 a 5 indicados en:
 
 {% content-ref url="conectar-funcionalidad-c++-con-la-interfaz-qml.md" %}
 [conectar-funcionalidad-c++-con-la-interfaz-qml.md](conectar-funcionalidad-c++-con-la-interfaz-qml.md)
@@ -153,3 +153,62 @@ Siga los pasos de 1 a 5 indicados en:
 
 sustituyendo los pasos 1 y 2 por los indicados en el ejemplo final con **QVariantList**.
 
+2\. Añade el siguiente código a **main.qml**
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+import org.kde.myapp 1.0
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    Maui.Page
+    {
+        anchors.fill: parent
+        showCSDControls: true
+
+        ListModel {
+            id: usersModel
+        }
+
+        Component.onCompleted: {
+            getUsers()
+        }
+
+        function getUsers() {
+            var users = Backend.users
+            for (var i = 0; i < users.length; i++) {
+                usersModel.append({"name": users[i].name,"subname": users[i].subname,"active": users[i].active,"age": users[i].age})
+            }
+        }
+
+        Maui.ListBrowser {
+            id: listUsers
+
+            anchors.fill: parent
+            anchors.margins: 5
+
+            horizontalScrollBarPolicy: ScrollBar.AlwaysOff
+            verticalScrollBarPolicy: ScrollBar.AlwaysOff
+
+            currentIndex: -1
+
+            spacing: 5
+
+            model: usersModel
+
+            delegate: Maui.ListBrowserDelegate {
+                width: ListView.view.width
+                height: 60
+                label1.text: name + " " + subname
+                label2.text: age
+            }
+        }
+    }
+}
+```
+
+<figure><img src="../../.gitbook/assets/Modelo-Delegado-Ejemplo-2.png" alt=""><figcaption></figcaption></figure>
