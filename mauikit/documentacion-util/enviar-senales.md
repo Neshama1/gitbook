@@ -175,3 +175,79 @@ Maui.ApplicationWindow
 ```
 
 <figure><img src="../../.gitbook/assets/Signal-C-a-QML.jpg" alt=""><figcaption></figcaption></figure>
+
+## De un componente QML a otro componente QML.
+
+Añada a **main.qml**:
+
+```
+signal buttonClicked(string data, int data2)
+```
+
+```
+page.buttonClicked("botón headbar pulsado","1")
+```
+
+```
+Connections {
+    target: page
+    onButtonClicked: {
+        labelUpdated.text = data
+        console.info("señal recibida")
+    }
+}
+```
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+import org.kde.myapp 1.0
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    Maui.Page {
+        id: page
+
+        anchors.fill: parent
+        showCSDControls: true
+
+        signal buttonClicked(string data, int data2)
+
+        headBar.leftContent: ToolButton {
+            icon.name: "typewriter"
+            flat: true
+            onClicked: {
+                var users = Backend.users
+                users[0].name = "Johnny"
+                Backend.users = users
+                page.buttonClicked("botón headbar pulsado","1")
+            }
+        }
+
+        Column {
+            anchors.centerIn: parent
+            Label {
+                id: label
+                text: Backend.users[0].name
+            }
+            Label {
+                id: labelUpdated
+
+                Connections {
+                    target: page
+                    onButtonClicked: {
+                        labelUpdated.text = data
+                        console.info("señal recibida")
+                    }
+                }
+            }
+        }
+    }
+}
+
+```
+
+<figure><img src="../../.gitbook/assets/Signal-QML-a-QML.jpg" alt=""><figcaption></figcaption></figure>
