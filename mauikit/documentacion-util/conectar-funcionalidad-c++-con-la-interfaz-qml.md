@@ -161,7 +161,7 @@ Maui.ApplicationWindow
 
 ## Pasar múltiples datos en una sola propiedad desde código C++ a la interfaz QML.
 
-En el siguiente ejemplo se crea la propiedad "users" conteniendo "name", "surname", "active" y "age".
+En el siguiente ejemplo se crea la propiedad "users" conteniendo "name", "surname", "active" y "age". La propiedad "users" será leída y escrita desde QML.
 
 ### 1. Sustituya el paso 1 y añada a myapp/src/code/backend.h
 
