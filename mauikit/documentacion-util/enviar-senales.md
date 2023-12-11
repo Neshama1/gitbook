@@ -450,3 +450,158 @@ En este ejemplo se inicia un hilo asíncrono desde la interfaz QML de la aplicac
 {% content-ref url="conectar-funcionalidad-c++-con-la-interfaz-qml.md" %}
 [conectar-funcionalidad-c++-con-la-interfaz-qml.md](conectar-funcionalidad-c++-con-la-interfaz-qml.md)
 {% endcontent-ref %}
+
+2\. Añade el archivo myapp/src/code/async.h:
+
+```
+// async.h
+
+#ifndef ASYNC_H
+#define ASYNC_H
+
+#include <QThread>
+#include <QObject>
+
+class Async : public QThread
+{
+    Q_OBJECT
+
+public:
+    Async();
+    ~Async();
+
+    void run();
+
+signals:
+    void taskCompleted(const int &error);
+};
+
+#endif // ASYNC_H
+```
+
+3\. Añade el archivo myapp/src/code/async.cpp:
+
+```
+// async.cpp
+
+#include "async.h"
+#include <QDebug>
+#include <QtCore>
+
+Async::Async()
+{
+}
+
+Async::~Async()
+{
+}
+
+void Async::run()
+{
+    int error = 0;
+
+    QThread::msleep(5000);
+
+    taskCompleted(error);
+}
+```
+
+4\. Añade a **main.cpp**:
+
+```
+#include "async.h"
+```
+
+```
+// Después de QQmlApplicationEngine engine;
+qmlRegisterType<Async>("Async", 1, 0, "Async");
+```
+
+5\. Añade en myapp/src/CMakeLists.txt:
+
+```
+code/async.cpp
+```
+
+```
+set(project_SRCS
+    code/main.cpp
+    assets/assets.qrc
+    code/backend.cpp
+    code/async.cpp
+    )
+```
+
+6\. Añade a **main.qml**:
+
+```
+import Async 1.0
+```
+
+```
+Async {
+    id: threadAsync
+}
+```
+
+```
+threadAsync.start()
+```
+
+```
+Connections {
+    target: threadAsync
+    onTaskCompleted: {
+        label.text = "tarea asíncrona finalizada con id de error: " + error
+    }
+}
+```
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+import org.kde.myapp 1.0
+import Async 1.0
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    Maui.Page {
+        id: page
+
+        anchors.fill: parent
+        showCSDControls: true
+
+        Async {
+            id: threadAsync
+        }
+
+        headBar.leftContent: ToolButton {
+            icon.name: "message"
+            text: "Iniciar"
+            flat: true
+            onClicked: {
+                threadAsync.start()
+            }
+        }
+
+        Label {
+            id: label
+            anchors.centerIn: parent
+            text: Backend.introductionText
+            Connections {
+                target: threadAsync
+                onTaskCompleted: {
+                    label.text = "tarea asíncrona finalizada con id de error: " + error
+                }
+            }
+        }
+    }
+}
+```
+
+Ejecute la aplicación y pulse el botón Iniciar. Tras 5 segundos:
+
+<figure><img src="../../.gitbook/assets/Signal-C-a-QML-Async.jpg" alt=""><figcaption></figcaption></figure>
