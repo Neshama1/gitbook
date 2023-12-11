@@ -58,7 +58,6 @@ private slots:
 signals:
     void updated(QString data);
 };
-
 ```
 
 ```
@@ -110,7 +109,6 @@ void Backend::on_UsersChanged()
 
     updated("users updated");
 }
-
 ```
 
 2\. Añada en **main.qml:**
@@ -171,7 +169,6 @@ Maui.ApplicationWindow
         }
     }
 }
-
 ```
 
 <figure><img src="../../.gitbook/assets/Signal-C-a-QML.jpg" alt=""><figcaption></figcaption></figure>
@@ -247,7 +244,6 @@ Maui.ApplicationWindow
         }
     }
 }
-
 ```
 
 <figure><img src="../../.gitbook/assets/Signal-QML-a-QML.jpg" alt=""><figcaption></figcaption></figure>
