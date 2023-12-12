@@ -8,7 +8,7 @@ description: >-
 
 La API REST es un servicio web ofrecido por sitios online, como por ejemplo RadioBrowser, YouTube, Unsplash y numerosos otros. Por lo general regresan la información en formato JSON, aunque también pueden regresar archivos XML o csv.
 
-## RadioBrowser.
+## RadioBrowser
 
 En este ejemplo se realiza búsqueda de radios en RadioBrowser, mostrando el contenido en la aplicación.
 
