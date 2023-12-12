@@ -338,3 +338,202 @@ obj.items[i].snippet.thumbnails.default.url
 videoModel.append({"videoId": obj.items[i].id.videoId,"title": obj.items[i].snippet.title})
 ```
 
+Añade el siguiente código a una nueva aplicación MauiKit:
+
+**1. Añade a main.qml** (incluya una clave API en apiKeyYouTube)**:**
+
+```
+// main.qml
+
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.ApplicationWindow
+{
+    id: root
+
+    property string apiKeyYouTube: ""
+
+    ListModel { id: videoModel }
+
+    Maui.SideBarView
+    {
+        anchors.fill: parent
+
+        sideBarContent: Maui.Page
+        {
+            Maui.Theme.colorSet: Maui.Theme.Window
+            anchors.fill: parent
+
+            headBar.visible: false
+
+            ListModel {
+            id: mainMenuModel
+                ListElement { name: "Search" ; description: "Find youtube videos" ; icon: "search" }
+                ListElement { name: "Channels" ; description: "Favorite channels" ; icon: "view-media-favorite" }
+                ListElement { name: "Playlists" ; description: "Save a playlist" ; icon: "view-media-playlist" }
+            }
+
+            Maui.ListBrowser {
+                id: menuSideBar
+
+                anchors.fill: parent
+                anchors.margins: 5
+
+                horizontalScrollBarPolicy: ScrollBar.AlwaysOff
+                verticalScrollBarPolicy: ScrollBar.AlwaysOff
+
+                currentIndex: 0
+
+                spacing: 5
+
+                model: mainMenuModel
+
+                delegate: Maui.ListBrowserDelegate {
+                    width: ListView.view.width
+                    height: 60
+                    label1.text: name
+                    label2.text: description
+
+                    iconSource: icon
+
+                    onClicked: {
+                        switch (index) {
+                            case 0: {
+                                menuSideBar.currentIndex = index
+                                stackView.push("qrc:/Search.qml")
+                                return
+                            }
+                            case 1: {
+                                menuSideBar.currentIndex = index
+                                //stackView.push("qrc:/Page2.qml")
+                                return
+                            }
+                            case 2: {
+                                menuSideBar.currentIndex = index
+                                //stackView.push("qrc:/Page3.qml")
+                                return
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        Maui.Page
+        {
+            anchors.fill: parent
+
+            headBar.visible: false
+
+            Component.onCompleted: {
+                stackView.push("qrc:/Search.qml")
+            }
+
+            StackView {
+                id: stackView
+                anchors.fill: parent
+            }
+        }
+    }
+}
+```
+
+**2. Añade una nueva paǵina (KDevelop  > File > New) llamada Search.qml:**
+
+```
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import org.mauikit.controls 1.3 as Maui
+
+Maui.Page {
+    id: searchPage
+
+    showCSDControls: true
+
+    headBar.background: Rectangle {
+        anchors.fill: parent
+        Maui.Theme.inherit: false
+        Maui.Theme.colorSet: Maui.Theme.View
+        color: Maui.Theme.backgroundColor
+    }
+
+    headBar.middleContent: Maui.SearchField {
+        anchors.horizontalCenter: parent.horizontalCenter
+        onAccepted: {
+            videoModel.clear()
+            search(text)
+        }
+    }
+
+    function search(query) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.HEADERS_RECEIVED) {
+                print('HEADERS_RECEIVED')
+            } else if(xhr.readyState === XMLHttpRequest.DONE) {
+                print('DONE');
+                var obj = JSON.parse(xhr.responseText.toString());
+
+                for(var i=0; i<obj.items.length; i++) {
+                    videoModel.append({"videoId": obj.items[i].id.videoId,"title": obj.items[i].snippet.title,"thumbnailUrl": obj.items[i].snippet.thumbnails.default.url,"description": obj.items[i].snippet.description})
+                }
+            }
+        }
+        xhr.open("GET", "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + query + "&key=" + apiKeyYouTube);
+        xhr.send();
+    }
+
+    Maui.ListBrowser {
+        anchors.fill: parent
+        anchors.margins: 20
+
+        horizontalScrollBarPolicy: ScrollBar.AsNeeded
+        verticalScrollBarPolicy: ScrollBar.AsNeeded
+
+        spacing: 10
+
+        model: videoModel
+
+        delegate: Rectangle {
+            color: "transparent"
+            width: ListView.view.width
+            height: 80
+            Maui.SwipeBrowserDelegate
+            {
+                anchors.fill: parent
+                label1.text: title
+                label2.text: description
+                iconSource: thumbnailUrl
+                iconSizeHint: Maui.Style.iconSizes.medium
+
+                quickActions: [
+                    Action
+                    {
+                        icon.name: "love"
+                    },
+
+                    Action
+                    {
+                        icon.name: "documentinfo"
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+
+**3. Añade Search.qml al archivo de recursos qml.qrc:**
+
+```
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Search.qml</file>
+    </qresource>
+</RCC>
+```
+
+<figure><img src="../../.gitbook/assets/API-REST-YouTube.jpg" alt=""><figcaption></figcaption></figure>
