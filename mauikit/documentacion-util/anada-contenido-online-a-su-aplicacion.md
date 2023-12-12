@@ -261,4 +261,4 @@ Maui.Page {
 </RCC>
 ```
 
-<figure><img src="../../.gitbook/assets/API-REST.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/API-REST-RadioBrowser.jpg" alt=""><figcaption></figcaption></figure>
