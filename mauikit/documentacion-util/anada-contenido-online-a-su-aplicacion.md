@@ -343,6 +343,10 @@ Añade el siguiente código a una nueva aplicación MauiKit:
 **1. Añade a main.qml** (incluya una clave API en apiKeyYouTube)**:**
 
 ```
+property string apiKeyYouTube: ""
+```
+
+```
 // main.qml
 
 import QtQuick 2.15
