@@ -323,3 +323,18 @@ items:
     [2]
     ...
 ```
+
+Una vez obtenido el objeto se accederá:
+
+```
+obj.nextPageToken
+obj.items[i].id.videoId
+obj.items[i].snippet.title
+obj.items[i].snippet.description
+obj.items[i].snippet.thumbnails.default.url
+```
+
+```
+videoModel.append({"videoId": obj.items[i].id.videoId,"title": obj.items[i].snippet.title})
+```
+
