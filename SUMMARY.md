@@ -74,3 +74,4 @@
     * [Conectar funcionalidad C++ con la interfaz QML](mauikit/documentacion-util/conectar-funcionalidad-c++-con-la-interfaz-qml.md)
     * [Componentes modelo-delegado o listas y cuadrículas](mauikit/documentacion-util/componentes-modelo-delegado-o-listas-y-cuadriculas.md)
     * [Enviar señales](mauikit/documentacion-util/enviar-senales.md)
+    * [Añada contenido online a su aplicación](mauikit/documentacion-util/anada-contenido-online-a-su-aplicacion.md)
