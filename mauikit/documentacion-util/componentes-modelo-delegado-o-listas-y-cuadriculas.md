@@ -101,6 +101,7 @@ Maui.ApplicationWindow
 
             StackView {
                 id: stackView
+                anchors.fill: parent
             }
         }
     }
@@ -133,6 +134,7 @@ sideBarContent: Maui.Page
 
     StackView {
         id: stackMenu
+        anchors.fill: parent
     }
 }
 ```
