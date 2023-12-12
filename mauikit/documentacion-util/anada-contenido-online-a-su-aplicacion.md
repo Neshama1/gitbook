@@ -262,3 +262,64 @@ Maui.Page {
 ```
 
 <figure><img src="../../.gitbook/assets/API-REST-RadioBrowser.jpg" alt=""><figcaption></figcaption></figure>
+
+## YouTube
+
+Para acceder a YouTube es necesario registrar una clave API. Siga estos sencillos pasos para obtenerla:
+
+{% embed url="https://github.com/headsetapp/headset-electron/wiki/Get-Youtube-API-Key" %}
+
+Ejemplo de búsqueda de término "madrid" (abrir en Firefox). Es necesario añadir al final la clave API:
+
+```
+https://www.googleapis.com/youtube/v3/search?part=snippet&q=madrid&key=
+```
+
+Formato de respuesta JSON:
+
+```
+kind: "youtube#searchListResponse"
+etag: "1FYjzINNJH9GjlwtsKREdJjDKaM"
+nextPageToken: "CAUQAA"
+regionCode: "ES"
+pageInfo:
+    totalResults: 1000000
+    resultsPerPage: 5
+items:
+    [0]
+        kind: "youtube#searchResult"
+        etag: "gNbO2BDX38K5ztPi6vd5Oas2itQ"
+        id:
+            kind: "youtube#video"
+            videoId: "ka5VtsbGl8E"
+        snippet:
+            publishedAt: "2023-12-09T22:20:09Z"
+            channelId: "UCWV3obpZVGgJ3j9FVhEjF2Q"
+            title: "Real Betis 1-1 Real Madrid | HIGHLIGHTS | LaLiga 2023/24"
+            description: "Real Madrid drew at the Benito Villamarín on LaLiga matchday 16. Ancelotti's side took the lead through Bellingham, who has ..."
+            thumbnails:
+                default:
+                    url: "https://i.ytimg.com/vi/ka5VtsbGl8E/default.jpg"
+                    width: 120
+                    ...
+            publishTime: "2023-12-09T22:20:09Z" 
+    [1]
+        kind: "youtube#searchResult"
+        etag: "yQ8FFqjetMcHVlSnYEyCQljo8co"
+        id:
+            kind: "youtube#video"
+            videoId: "AfvnWbtRPiE"
+        snippet: {
+            publishedAt: "2023-12-01T05:00:07Z"
+            channelId: "UCTeE0q8xCsbCBL4npUWDPFg"
+            title: "Juhn - Madrid [Video Oficial]"
+            description: "Juhn \"Madrid\", performing video (c) 2023 JSG Records (Juhn Music, S by Santana and Ganda LLC) Dale PLAY en todas las ..."
+            thumbnails:
+                default:
+                url: "https://i.ytimg.com/vi/AfvnWbtRPiE/default.jpg"
+                width: 120
+                ...
+            publishTime: "2023-12-01T05:00:07Z"
+    [2]
+    ...
+```
