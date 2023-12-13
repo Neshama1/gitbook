@@ -335,5 +335,5 @@ BuildRequires:  AppStream            // soporte de metadatos: /usr/share/metainf
 %kf5_makeinstall -C build      // instala
 
 %kf5_post_install
-%fdupes %{buildroot}%{_prefix} // elimina duplicados reemplazandolos por enlaces
+%fdupes %{buildroot}%{_prefix} // elimina duplicados reemplazándolos por enlaces
 ```
