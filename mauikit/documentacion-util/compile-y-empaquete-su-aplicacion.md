@@ -119,6 +119,8 @@ Discover and listen music.
 
 La aplicación debería compilar exitosamente: **succeeded**
 
+## El fichero spec.
+
 De un modo práctico con cada aplicación sólo tendrá que rellenar:
 
 * Name, Versión, License, Summary, URL.
