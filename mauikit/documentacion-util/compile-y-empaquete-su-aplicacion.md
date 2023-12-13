@@ -28,7 +28,7 @@ Tomando como ejemplo la aplicación MauiKit base (mauimusic) creada como se indi
     * Name: mauikit-apps\_Tumbleweed
     * Architectures: i586, x86\_64
 
-    El repositorio mauikit-apps depende a su vez del repositorio de openSUSe Tumbleweed, por lo que el repositorio añadido a su subproyecto tiene acceso a los 2 repositorios.
+    El repositorio mauikit-apps depende a su vez del repositorio de openSUSE Tumbleweed, por lo que el repositorio añadido a su subproyecto tiene acceso a los 2 repositorios.
 
 #### 3. Seleccionar el subproyecto y crear un paquete:
 
