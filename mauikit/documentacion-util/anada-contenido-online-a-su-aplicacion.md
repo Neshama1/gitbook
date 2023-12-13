@@ -263,6 +263,21 @@ Maui.Page {
 
 <figure><img src="../../.gitbook/assets/API-REST-RadioBrowser.jpg" alt=""><figcaption></figcaption></figure>
 
+#### Solicitudes API
+
+<pre><code><strong>// Búsqueda
+</strong>https://at1.api.radio-browser.info/json/stations/search?limit=10&#x26;name=brava&#x26;hidebroken=true&#x26;order=clickcount&#x26;reverse=true
+<strong>
+</strong>// Estaciones por país:
+https://at1.api.radio-browser.info/json/stations/search?limit=10&#x26;countrycode=US&#x26;hidebroken=true&#x26;order=clickcount&#x26;reverse=true
+
+// Estaciones por idioma:
+https://at1.api.radio-browser.info/json/stations/search?limit=10&#x26;language=spanish&#x26;hidebroken=true&#x26;order=clickcount&#x26;reverse=true
+
+// Estaciones por tag:
+https://at1.api.radio-browser.info/json/stations/search?limit=10&#x26;tagList=pop&#x26;hidebroken=true&#x26;order=clickcount&#x26;reverse=true
+</code></pre>
+
 ## YouTube
 
 Para acceder a YouTube es necesario registrar una clave API. Siga estos sencillos pasos para obtenerla:
@@ -541,3 +556,39 @@ Maui.Page {
 ```
 
 <figure><img src="../../.gitbook/assets/API-REST-YouTube.jpg" alt=""><figcaption></figcaption></figure>
+
+#### Solicitudes API
+
+<pre><code>// 1 Búsqueda:
+
+// Primera página:
+"https://www.googleapis.com/youtube/v3/search?part=snippet&#x26;q=" + query + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+// Páginas siguientes:
+"https://www.googleapis.com/youtube/v3/search?pageToken=" + nextPageToken + "&#x26;part=snippet&#x26;q=" + query + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+// 2 Playlists de un canal:
+"https://www.googleapis.com/youtube/v3/playlists?part=snippet&#x26;channelId=" + idChannel + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+// 3 Contenido de una playlist:
+
+// Primera página:
+"https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&#x26;playlistId=" + playlistId + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+<strong>// Páginas siguientes:
+</strong>"https://youtube.googleapis.com/youtube/v3/playlistItems?pageToken=" + nextPageToken + "&#x26;part=snippet&#x26;playlistId=" + playlistId + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+// 4 Contenido de un canal:
+
+// Obtener playlist de subidas (info de canal):
+"https://www.googleapis.com/youtube/v3/channels?id=" + channelId + "&#x26;key=" + apiKeyYouTube + "&#x26;part=snippet,contentDetails,statistics"
+
+// Obtener contenido de la playlist de subidas (videos del canal:
+
+// Primera página:
+"https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&#x26;playlistId=" + uploadsPlaylistId + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+// Páginas siguientes:
+"https://youtube.googleapis.com/youtube/v3/playlistItems?pageToken=" + nextPageToken + "&#x26;part=snippet&#x26;playlistId=" + uploadsPlaylistId + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
+
+</code></pre>
