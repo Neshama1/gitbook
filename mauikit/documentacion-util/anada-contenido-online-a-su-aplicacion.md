@@ -583,7 +583,7 @@ Maui.Page {
 // Obtener playlist de subidas (info de canal):
 "https://www.googleapis.com/youtube/v3/channels?id=" + channelId + "&#x26;key=" + apiKeyYouTube + "&#x26;part=snippet,contentDetails,statistics"
 
-// Obtener contenido de la playlist de subidas (videos del canal:
+// Obtener contenido de la playlist de subidas (videos del canal):
 
 // Primera página:
 "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&#x26;playlistId=" + uploadsPlaylistId + "&#x26;maxResults=" + maxResults + "&#x26;key=" + apiKeyYouTube
