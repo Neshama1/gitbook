@@ -250,29 +250,12 @@ project(mauimusic VERSION 1.0)
 // mauimusic.spec
 
 %files
-%license licenses/*
-%doc README.md
-%{_bindir}/mauimusic
-%{_datadir}/applications/*.desktop
-%{_datadir}/metainfo/*.xml
-%{_datadir}/icons/hicolor/*/*/*
-```
-
-```
-// mauimusic.spec
-
-%files
-%license licenses/*
-%doc README.md
-/usr/bin/mauimusic
-/usr/share/applications/*.desktop
-/usr/share/metainfo/*.xml
-/usr/share/icons/hicolor/*/*/*
-```
-
-```
-%license licenses/*    // mauimusic/licenses/LGPL-3.0.txt
-%doc README.md         // mauimusic/README.md
+%license licenses/*                    // mauimusic/licenses/LGPL-3.0.txt
+%doc README.md                         // mauimusic/README.md
+%{_bindir}/mauimusic                   // /usr/bin/mauimusic
+%{_datadir}/applications/*.desktop     // /usr/share/applications/*.desktop
+%{_datadir}/metainfo/*.xml             // /usr/share/metainfo/*.xml
+%{_datadir}/icons/hicolor/*/*/*        // /usr/share/icons/hicolor/*/*/*
 ```
 
 #### Macros de rutas.
