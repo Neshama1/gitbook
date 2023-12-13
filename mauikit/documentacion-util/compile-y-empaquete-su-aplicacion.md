@@ -238,7 +238,7 @@ install(FILES src/data/project.desktop DESTINATION ${XDG_APPS_INSTALL_DIR} RENAM
 install(FILES src/assets/logo.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps RENAME ${PROJECT_NAME}.svg)
 ```
 
-Si alguna vez compila una aplicación y no sabe que archivos se instalan, no incluya nada en la sección Files y compile. Si la compilación es correcta, producirá "failed" antes de empaquetar, pero le indicará los archvos y rutas de instalación.
+Si alguna vez compila una aplicación y no sabe que archivos se instalan, no incluya nada en la sección Files y compile. Si la compilación es correcta, producirá "failed" antes de empaquetar, pero le indicará los archivos y rutas de instalación.
 
 El nombre del ejecutable o binario es el nombre del proyecto:
 
