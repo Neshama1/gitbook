@@ -267,7 +267,7 @@ project(mauimusic VERSION 1.0)
 /usr/bin/mauimusic
 /usr/share/applications/*.desktop
 /usr/share/metainfo/*.xml
-/usr/share/icons/hicolor/*/*/*Macros de rutas
+/usr/share/icons/hicolor/*/*/*
 ```
 
 ```
