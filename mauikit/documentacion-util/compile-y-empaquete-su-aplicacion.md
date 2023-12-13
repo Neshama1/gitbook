@@ -270,6 +270,11 @@ project(mauimusic VERSION 1.0)
 /usr/share/icons/hicolor/*/*/*Macros de rutas
 ```
 
+```
+%license licenses/*    // mauimusic/licenses/LGPL-3.0.txt
+%doc README.md         // mauimusic/README.md
+```
+
 #### Macros de rutas.
 
 | %{\_sysconfdir}         | /etc                                                      | <p><br></p>                                     |
