@@ -324,7 +324,7 @@ BuildRequires:  AppStream            // soporte de metadatos: /usr/share/metainf
 ```
 %prep
 %autosetup -p1                 // extrae mauimusic-0.1.0.tar.gz y entra en carpeta mauimusic-0.1.0
-                               // autosetup -p1 -n maui-v0.1.0 especifica nombre carpeta si no coincide con %{name}-%{version}}
+                               // autosetup -p1 -n maui-v0.1.0 especifica nombre carpeta si no coincide con %{name}-%{version}
                                // -p1: omite nombre de la primera carpeta superior al aplicar patch
 
 %build
