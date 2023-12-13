@@ -310,17 +310,18 @@ project(mauimusic VERSION 1.0)
 | <p><br></p>             | <p><br></p>                                               | <p><br></p>                                     |
 | %{\_docdir}             | /usr/share/doc/packages                                   | <p><br></p>                                     |
 
-#### Si es openSUSE Leap 15.4 y 15.5 excluir paquete (arquitectura x86\_64)
+#### Otras secciones
 
-```
-%if 0%{?sle_version} == 150400 && 0%{?is_opensuse} 
-ExcludeArch: x86_64
+<pre><code><strong>// Si es openSUSE Leap 15.4 y 15.5 excluir paquete (arquitectura x86_64)
+</strong><strong>
+</strong><strong>%if 0%{?sle_version} == 150400 &#x26;&#x26; 0%{?is_opensuse} 
+</strong>ExcludeArch: x86_64
 %endif
 
-%if 0%{?sle_version} == 150500 && 0%{?is_opensuse} 
+%if 0%{?sle_version} == 150500 &#x26;&#x26; 0%{?is_opensuse} 
 ExcludeArch: x86_64
 %endif
-```
+</code></pre>
 
 ```
 BuildRequires:  gcc-c++              // compilador de GNU para código escrito en C++
