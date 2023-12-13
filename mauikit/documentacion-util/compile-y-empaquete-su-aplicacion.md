@@ -20,7 +20,7 @@ Tomando como ejemplo la aplicación MauiKit base (mauimusic) creada como se indi
 
 #### 2. Crear un subproyecto y añadir el repositorio MauiKit:
 
-* En la página se subproyecto verá: Overview, Repositories, Monitor, Requests, etc.
+* En la página de subproyecto verá: Overview, Repositories, Monitor, Requests, etc.
 *   Seleccione Repositories > Add from a project:
 
     * Project: home:hopeandtruth6517:mauikit-apps
