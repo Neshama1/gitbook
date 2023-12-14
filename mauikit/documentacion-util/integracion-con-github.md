@@ -51,7 +51,35 @@ git config --global user.name "tu nombre"
 cd /home/user/Devel/Apps/mauimusic
 git add *
 git commit -m "first commit"
-git push origin main
+git push origin main  
 ```
 
-#### &#x20;&#x20;
+###
+
+### 6. Cree el toke de acceso a GitHub.
+
+GitHub > Dashboard >  pulse sobre la imagen de perfil (superior derecha) > Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token (classic)
+
+* Note: GitHub Token
+* Expiration: No expiration
+* Scopes: todos
+* Generate token
+* Copie el nuevo token. No podrá verlo de nuevo, por lo que debe guardarlo.
+
+### 7. Cree un token en Open Build Service.
+
+Your Home Project > pulse sobre la imagen de perfil (superior derecha) > Your profile > Manage Your Tokens > Create Token >&#x20;
+
+* Type: workflow
+* Description: OBS Personal Access Token
+* SCM Token: pega el token de GitHub obtenido en el punto 6.
+* Path for Workflows Configuration File (no modificar): .obs/workflows.yml
+* Create
+
+Apunte su OBS Personal Access Token:
+
+* Secret: Copie y guarde.
+* Token trigger url: Copie y guarde.
+
+
+
