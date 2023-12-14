@@ -81,5 +81,47 @@ Apunte su OBS Personal Access Token:
 * Secret: Copie y guarde.
 * Token trigger url: Copie y guarde.
 
+### 8. Cree en GitHub un webhook para su aplicación.
 
+Seleccione:
+
+* GitHub > click sobre imagen de perfil (superior derecha) > Your repositories > su aplicación (mauimusic)
+* De las opciones superiores (code, Issues, Pull requests...) seleccione: Settings > Webhooks > Add webhook
+  * Payload URL: Pegar su "Token trigger url" del punto 7.
+  * Content type: application json
+  * Secret: Pegar su "Secret" del punto 7.
+  * Seleccione: Send me everything.
+  * Add webhook.
+
+### 9. Crear .obs/workflows.yml
+
+* Abra la página de código de su aplicación (mauimusic): Selecciones Code o click sobre imagen de perfil (superior derecha) > Your repositories > su aplicación (mauimusic).
+* Add file > Create new file
+  * Pegar en la caja de texto "mauimusic/Name your file". Sustituya Name your file por: .obs/workflows.yml
+  * Creará la carpeta oculta ".obs" y el archivo workflows.yml a la vez.
+
+Incluya como contenido de workflows.yml:
+
+```
+rebuild_master:
+    steps:
+        - rebuild_package:
+            project: home:usuario:subproyecto1
+            package: mauimusic
+    filters:
+    event: push
+workflow:
+  steps:
+    - branch_package:
+        source_project: home:usuario
+        source_package: mauimusic
+        target_project: home:usuario:subproyecto2
+  filters:
+    event: tag_push 
+```
+
+En el archivo anterior se ha incluido:
+
+* rebuild\_master: para compilar cada commit en subproyecto1 y paquete mauimusic.
+* workflow: para compilar cada nueva publicación de versión o tag de su aplicación en subproyecto2 y paquete mauimusic.
 
