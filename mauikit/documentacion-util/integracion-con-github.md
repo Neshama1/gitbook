@@ -125,3 +125,12 @@ En el archivo anterior se ha incluido:
 * rebuild\_master: para compilar cada commit en subproyecto1 y paquete mauimusic.
 * workflow: para compilar cada nueva publicación de versión o tag de su aplicación en subproyecto2 y paquete mauimusic.
 
+Haga clic en Commit changes > Commit changes.
+
+### 10. Descarge los cambios a su carpeta local:
+
+```
+cd /home/user/Devel/Apps/mauimusic
+git pull
+```
+
