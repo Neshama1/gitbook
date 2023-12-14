@@ -233,3 +233,33 @@ Discover and listen music.
 %changelog
 
 ```
+
+### 12. Para compilar cada nueva versión o tag de su aplicación:
+
+* Crear Subproyecto2 > su paquete > \_service como en el punto 11 e incluir:
+
+```
+<?xml version="1.0"?>
+<services>
+  <service name="obs_scm">
+    <param name="versionformat">@PARENT_TAG@</param>
+    <param name="url">https://github.com/user/mauimusic.git</param>
+    <param name="scm">git</param>
+    <param name="revision">@PARENT_TAG@</param>
+  </service>
+  <service name="tar" mode="buildtime"/>
+  <service name="recompress" mode="buildtime">
+    <param name="file">*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version" mode="buildtime"/>
+</services>
+```
+
+Para pusblicar una nueva versión:
+
+```
+cd /home/user/Devel/Apps/mauimusic
+git tag -a v0.1.0 -m "Releasing version v0.1.0"
+git push origin v0.1.0
+```
