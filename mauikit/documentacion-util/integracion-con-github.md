@@ -54,7 +54,14 @@ git commit -m "first commit"
 git push origin main  
 ```
 
-###
+Para el segundo y siguientes commits:
+
+```
+cd /home/user/Devel/Apps/mauimusic
+git add *
+git commit -m "my commit"
+git push 
+```
 
 ### 6. Cree el toke de acceso a GitHub.
 
@@ -234,9 +241,21 @@ Discover and listen music.
 
 ```
 
+Para actualizar:
+
+Open Build Service > Subproyecto > Paquete > Trigger services
+
 ### 12. Para compilar cada nueva versión o tag de su aplicación:
 
-* Crear Subproyecto2 > su paquete > \_service como en el punto 11 e incluir:
+Para publicar una nueva versión en GitHub:
+
+```
+cd /home/user/Devel/Apps/mauimusic
+git tag -a v0.1.0 -m "Releasing version v0.1.0"
+git push origin v0.1.0
+```
+
+Crear Subproyecto2 > su paquete > \_service como en el punto 11 e incluir:
 
 ```
 <?xml version="1.0"?>
@@ -256,10 +275,6 @@ Discover and listen music.
 </services>
 ```
 
-Para pusblicar una nueva versión:
+Para actualizar:
 
-```
-cd /home/user/Devel/Apps/mauimusic
-git tag -a v0.1.0 -m "Releasing version v0.1.0"
-git push origin v0.1.0
-```
+Open Build Service > Subproyecto > Paquete > Trigger service
