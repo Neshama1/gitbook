@@ -76,3 +76,4 @@
     * [Enviar señales](mauikit/documentacion-util/enviar-senales.md)
     * [Añada contenido online a su aplicación](mauikit/documentacion-util/anada-contenido-online-a-su-aplicacion.md)
     * [Compile y empaquete su aplicación](mauikit/documentacion-util/compile-y-empaquete-su-aplicacion.md)
+    * [Integración con GitHub](mauikit/documentacion-util/integracion-con-github.md)
