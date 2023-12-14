@@ -63,7 +63,7 @@ git commit -m "my commit"
 git push 
 ```
 
-### 6. Cree el toke de acceso a GitHub.
+### 6. Cree el token de acceso a GitHub.
 
 GitHub > Dashboard >  pulse sobre la imagen de perfil (superior derecha) > Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token (classic)
 
