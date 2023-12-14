@@ -167,9 +167,9 @@ git pull
 </services>
 ```
 
-Sustituya user y mauimusic
+Sustituya user y mauimusic.
 
-### Añada mauimusic.spec o supaquete.spec
+* Añada mauimusic.spec o supaquete.spec
 
 ```
 %define mauikit_version 3.0.1
