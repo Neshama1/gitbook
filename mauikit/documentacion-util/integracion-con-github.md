@@ -19,7 +19,7 @@ description: >-
 
 ```
 cd /home/user/Devel/Apps
-git clone https://github.com/Neshama1/mauimusic.git
+git clone https://github.com/user/mauimusic.git
 ```
 
 ### 4. Instale y haga login en GitHub:
