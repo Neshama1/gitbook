@@ -134,3 +134,102 @@ cd /home/user/Devel/Apps/mauimusic
 git pull
 ```
 
+### 11. Para compilar cada commit:
+
+* Si no lo ha hecho, cree su paquete subproyecto1 > su paquete.
+* Paquete > Add an empty file or service > File URL e indique la URL de cualquier archivo online. Es necesario para crear un servicio (fichero \_service) válido. Por ejemplo, File URL: [https://invent.kde.org/maui/mauikit/-/archive/master/mauikit-master.tar.gz](https://invent.kde.org/maui/mauikit/-/archive/master/mauikit-master.tar.gz)
+* Abra Subproyecto1 > Paquete > \_service e incluya:
+
+```
+<?xml version="1.0"?>
+<services>
+  <service name="obs_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/user/mauimusic.git</param>
+    <param name="revision">main</param>
+    <param name="versionformat">0.1+git%cd.%h</param>
+    <param name="filename">mauimusic</param>
+    <param name="changesgenerate">enable</param>
+  </service>
+  <service name="tar" mode="buildtime"/>
+  <service name="recompress" mode="buildtime">
+    <param name="file">*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version" mode="buildtime"/>
+</services>
+```
+
+Sustituya user y mauimusic
+
+### Añada mauimusic.spec o supaquete.spec
+
+```
+%define mauikit_version 3.0.1
+
+Name:           mauimusic
+Version:        0.1.0
+Release:        0
+License:        LGPL-3.0
+Summary:        Discover and listen music
+URL:            https://github.com/user/mauimusic
+Source:         %{name}-%{version}.tar.gz
+
+%if 0%{?sle_version} == 150400 && 0%{?is_opensuse} 
+ExcludeArch: x86_64
+%endif
+
+%if 0%{?sle_version} == 150500 && 0%{?is_opensuse} 
+ExcludeArch: x86_64
+%endif
+
+BuildRequires:  gcc-c++
+BuildRequires:  cmake
+BuildRequires:  extra-cmake-modules
+BuildRequires:  fdupes
+BuildRequires:  AppStream
+
+BuildRequires:  cmake(Qt5QuickCompiler)
+BuildRequires:  cmake(Qt5Core)
+BuildRequires:  cmake(Qt5Quick)
+BuildRequires:  cmake(Qt5Qml)
+BuildRequires:  cmake(Qt5Widgets)
+
+BuildRequires:  cmake(KF5I18n)
+BuildRequires:  cmake(KF5CoreAddons)
+
+BuildRequires:  cmake(MauiKit) = %{mauikit_version}
+BuildRequires:  cmake(MauiKitFileBrowsing) = %{mauikit_version}
+
+Requires:       qt5qmlimport(QtQuick.Controls.2)
+Requires:       qt5qmlimport(QtQuick.Layouts.1)
+
+Requires:       mauikit = %{mauikit_version}
+Requires:       mauikit-filebrowsing = %{mauikit_version}
+
+%description
+Discover and listen music.
+
+%prep
+%autosetup -p1
+
+%build
+%cmake_kf5 -d build
+%cmake_build
+
+%install
+%kf5_makeinstall -C build
+%kf5_post_install
+%fdupes %{buildroot}%{_prefix}
+
+%files
+%license licenses/*
+%doc README.md
+%{_bindir}/mauimusic
+%{_datadir}/applications/*.desktop
+%{_datadir}/metainfo/*.xml
+%{_datadir}/icons/hicolor/*/*/*
+
+%changelog
+
+```
