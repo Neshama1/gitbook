@@ -24,7 +24,7 @@ Maui.SettingsDialog
 
         Maui.SectionItem
         {
-            label1.text:  i18n("Search results")
+            label1.text: i18n("Search results")
             label2.text: i18n("Results per page")
             SpinBox {
                 from: 5
@@ -53,7 +53,7 @@ Maui.SettingsDialog
 
         Maui.SectionItem
         {
-            label1.text:  i18n("Auto save")
+            label1.text: i18n("Auto save")
             label2.text: i18n("Auto saves your file every few seconds")
             Switch {
             }
@@ -114,6 +114,51 @@ La configuración es almacenada en el archivo:
 ```
 
 <figure><img src="../../.gitbook/assets/Controls-SettingsDialog.jpg" alt=""><figcaption></figcaption></figure>
+
+### Personalizar etiquetas
+
+Estas son las propiedades de SectionGroup y SectionItem:
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classSectionGroup.html" %}
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classSectionItem.html" %}
+
+Si quiere personalizar SectionGroup o SectionItem:
+
+```
+// En SectionGroup sustituya:
+title: i18n("Results")
+description: i18n("General")
+
+// por
+template.label1.text: i18n("Results")
+template.label1.font.weight: Font.Normal
+template.label1.font.pixelSize: 20
+
+template.label2.text: i18n("General")
+template.label2.font.weight: Font.Normal
+```
+
+```
+// En SectionItem sustituya:
+label1.text: i18n("Auto save")
+label2.text: i18n("Auto saves your file every few seconds")
+
+// Por:
+template.label1.text: i18n("Auto save")
+template.label1.font.weight: Font.Normal
+
+template.label2.text: i18n("Auto saves your file every few seconds")
+template.label2.font.weight: Font.Normal
+```
+
+Consulte las propiedades de template:
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/classListItemTemplate.html" %}
+
+Consulte las propiedades de label. No olvide examinar "lista de todos los miembros", que incluye los miembros heredados:
+
+{% embed url="https://doc.qt.io/qt-5/qml-qtquick-controls2-label.html" %}
 
 ## Propiedades
 
