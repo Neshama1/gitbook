@@ -160,6 +160,53 @@ Consulte las propiedades de label. No olvide examinar "lista de todos los miembr
 
 {% embed url="https://doc.qt.io/qt-5/qml-qtquick-controls2-label.html" %}
 
+### Personalizar fondo
+
+Aplique su propio fondo estableciendo background y headBar.background:
+
+```
+Maui.SettingsDialog
+{
+    headBar.background: Maui.ShadowedRectangle {
+        anchors.fill: parent
+
+        Maui.Theme.inherit: false
+        Maui.Theme.colorSet: Maui.Theme.View
+
+        border.width: 0
+        border.color: Qt.lighter("#dadada",1.08)
+        shadow.size: 15
+        shadow.color: Maui.ColorUtils.brightnessForColor(Maui.Theme.backgroundColor) == Maui.ColorUtils.Light ? Qt.darker("#dadada",1.1) : "#2c2c2c"
+        shadow.xOffset: -1
+        shadow.yOffset: 0
+
+        color: Maui.Theme.backgroundColor
+        corners.topLeftRadius: 6
+        corners.topRightRadius: 6
+    }
+
+    background: Maui.ShadowedRectangle {
+        anchors.fill: parent
+
+        Maui.Theme.inherit: false
+        Maui.Theme.colorSet: Maui.Theme.View
+
+        border.width: 0
+        border.color: Qt.lighter("#dadada",1.08)
+        shadow.size: 15
+        shadow.color: Maui.ColorUtils.brightnessForColor(Maui.Theme.backgroundColor) == Maui.ColorUtils.Light ? Qt.darker("#dadada",1.1) : "#2c2c2c"
+        shadow.xOffset: -1
+        shadow.yOffset: 0
+
+        color: Maui.Theme.backgroundColor
+        corners.topLeftRadius: 6
+        corners.topRightRadius: 6
+        corners.bottomLeftRadius: 6
+        corners.bottomRightRadius: 6
+    }
+}
+```
+
 ## Propiedades
 
 {% embed url="https://api.kde.org/mauikit/mauikit/html/classSettingsDialog.html" %}
