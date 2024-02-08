@@ -41,7 +41,7 @@ Seleccione:
 Configure su correo y nombre:
 
 ```
-git config --global user.email "tucorreo@servidor.com
+git config --global user.email "tucorreo@servidor.com"
 git config --global user.name "tu nombre"
 ```
 
