@@ -32,6 +32,10 @@ Maui.ApplicationWindow
 ```
 
 ```
+iconSource: "draw-arrow-forward"
+```
+
+```
 imageSource: "qrc:/assets/6588168.jpg"
 ```
 
