@@ -201,3 +201,7 @@ description: Incluye la totalidad de componentes principales.
 [WindowControlsMac](https://api.kde.org/mauikit/mauikit/html/classWindowControlsMac.html)
 
 [WindowControlsWindows](https://api.kde.org/mauikit/mauikit/html/classWindowControlsWindows.html)
+
+## Link
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/index.html" %}
