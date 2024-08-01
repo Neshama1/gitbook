@@ -205,7 +205,7 @@ description: >-
 
 [WindowControlsWindows](https://api.kde.org/mauikit/mauikit/html/classWindowControlsWindows.html)
 
-## Link
+## Links
 
 {% embed url="https://api.kde.org/mauikit/mauikit/html/index.html" %}
 Lista alfabética
