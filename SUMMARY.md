@@ -71,6 +71,7 @@
     * [Referencia completa: Text Editor](mauikit/controles/referencia-completa-text-editor.md)
     * [Referencia completa: MauiMan](mauikit/controles/referencia-completa-mauiman.md)
     * [Qt Quick Controls](mauikit/controles/qt-quick-controls.md)
+    * [Referencia completa: tipos QML](mauikit/controles/referencia-completa-tipos-qml.md)
   * [Documentación útil](mauikit/documentacion-util/README.md)
     * [Aclaración](mauikit/documentacion-util/aclaracion.md)
     * [Actuaciones condicionales](mauikit/documentacion-util/actuaciones-condicionales.md)
