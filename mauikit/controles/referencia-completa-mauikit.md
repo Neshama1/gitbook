@@ -1,5 +1,8 @@
 ---
-description: Incluye la totalidad de componentes principales.
+description: >-
+  MauiKit es un conjunto de componentes QtQuick para crear interfaces de usuario
+  adaptables basadas en QtQuick Controls 2. Permite crear aplicaciones
+  convergentes adaptadas a cada dispositivo.
 ---
 
 # Referencia completa: MauiKit
@@ -205,3 +208,9 @@ description: Incluye la totalidad de componentes principales.
 ## Link
 
 {% embed url="https://api.kde.org/mauikit/mauikit/html/index.html" %}
+Lista alfabética
+{% endembed %}
+
+{% embed url="https://api.kde.org/mauikit/mauikit/html/index.html" %}
+Página principal
+{% endembed %}
