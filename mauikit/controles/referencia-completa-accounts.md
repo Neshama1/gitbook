@@ -11,3 +11,7 @@ description: Incluye la totalidad de componentes para gestión de cuentas.
 [CredentialsDialog](https://api.kde.org/mauikit/mauikit-accounts/html/classCredentialsDialog.html)
 
 [MauiAccounts](https://api.kde.org/mauikit/mauikit-accounts/html/classMauiAccounts.html)
+
+## Link
+
+{% embed url="https://api.kde.org/mauikit/mauikit-accounts/html/index.html" %}
