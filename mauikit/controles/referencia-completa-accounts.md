@@ -16,7 +16,7 @@ description: >-
 
 ## Links
 
-{% embed url="https://api.kde.org/mauikit/mauikit-accounts/html/index.html" %}
+{% embed url="https://api.kde.org/mauikit/mauikit-accounts/html/classes.html" %}
 Lista alfabética
 {% endembed %}
 
