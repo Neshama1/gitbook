@@ -1,5 +1,8 @@
 ---
-description: Componentes para gestión de calendarios y eventos.
+description: >-
+  MauiKit Calendar es un conjunto de componentes y clases de QtQuick para
+  visualizar fechas de calendario y crear eventos. Parte de las soluciones de
+  back-end utilizadas se basan en Akonadi.
 ---
 
 # Referencia completa: Calendar
@@ -38,6 +41,12 @@ description: Componentes para gestión de calendarios y eventos.
 
 [YearsGrid](https://api.kde.org/mauikit/mauikit-calendar/html/classYearsGrid.html)[YearView](https://api.kde.org/mauikit/mauikit-calendar/html/classYearView.html)
 
-## Link
+## Links
 
 {% embed url="https://api.kde.org/mauikit/mauikit-calendar/html/classes.html" %}
+Lista alfabética
+{% endembed %}
+
+{% embed url="https://api.kde.org/mauikit/mauikit-calendar/html/index.html" %}
+Página principal
+{% endembed %}
