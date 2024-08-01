@@ -68,6 +68,7 @@
     * [Referencia completa: File Browsing](mauikit/controles/referencia-completa-file-browsing.md)
     * [Referencia completa: Image Tools](mauikit/controles/referencia-completa-image-tools.md)
     * [Referencia completa: Terminal](mauikit/controles/referencia-completa-terminal.md)
+    * [Referencia completa: Text Editor](mauikit/controles/referencia-completa-text-editor.md)
     * [Qt Quick Controls](mauikit/controles/qt-quick-controls.md)
   * [Documentación útil](mauikit/documentacion-util/README.md)
     * [Aclaración](mauikit/documentacion-util/aclaracion.md)
