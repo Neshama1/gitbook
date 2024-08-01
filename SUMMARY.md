@@ -74,6 +74,7 @@
     * [Referencia completa: tipos QML](mauikit/controles/referencia-completa-tipos-qml.md)
   * [Documentación útil](mauikit/documentacion-util/README.md)
     * [Aclaración](mauikit/documentacion-util/aclaracion.md)
+    * [Links a recursos externos](mauikit/documentacion-util/links-a-recursos-externos.md)
     * [Actuaciones condicionales](mauikit/documentacion-util/actuaciones-condicionales.md)
     * [Colores](mauikit/documentacion-util/colores.md)
     * [Anclaje de controles](mauikit/documentacion-util/anclaje-de-controles.md)
