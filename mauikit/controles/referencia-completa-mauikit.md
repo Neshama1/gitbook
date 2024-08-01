@@ -130,7 +130,7 @@ description: Incluye la totalidad de componentes principales.
 
 [PieButton](https://api.kde.org/mauikit/mauikit/html/classPieButton.html)
 
-[PlatformTheme](https://api.kde.org/mauikit/mauikit/html/classMaui\_1\_1PlatformTheme.html) (Maui)
+[PlatformTheme](https://api.kde.org/mauikit/mauikit/html/classMaui\_1\_1PlatformTheme.html)
 
 [PopupPage](https://api.kde.org/mauikit/mauikit/html/classPopupPage.html)
 
