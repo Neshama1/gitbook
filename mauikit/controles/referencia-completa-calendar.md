@@ -39,7 +39,9 @@ description: >-
 
 [TimeComboBox](https://api.kde.org/mauikit/mauikit-calendar/html/classTimeComboBox.html)
 
-[YearsGrid](https://api.kde.org/mauikit/mauikit-calendar/html/classYearsGrid.html)[YearView](https://api.kde.org/mauikit/mauikit-calendar/html/classYearView.html)
+[YearsGrid](https://api.kde.org/mauikit/mauikit-calendar/html/classYearsGrid.html)
+
+[YearView](https://api.kde.org/mauikit/mauikit-calendar/html/classYearView.html)
 
 ## Links
 
