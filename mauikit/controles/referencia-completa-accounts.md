@@ -1,5 +1,7 @@
 ---
-description: Incluye la totalidad de componentes para gestión de cuentas.
+description: >-
+  MauiKit Accounts es un conjunto de componentes y clases de QtQuick diseñados
+  para facilitar el manejo y la navegación por el sistema de archivos.
 ---
 
 # Referencia completa: Accounts
@@ -12,6 +14,12 @@ description: Incluye la totalidad de componentes para gestión de cuentas.
 
 [MauiAccounts](https://api.kde.org/mauikit/mauikit-accounts/html/classMauiAccounts.html)
 
-## Link
+## Links
 
 {% embed url="https://api.kde.org/mauikit/mauikit-accounts/html/index.html" %}
+Lista alfabética
+{% endembed %}
+
+{% embed url="https://api.kde.org/mauikit/mauikit-accounts/html/index.html" %}
+Página principal
+{% endembed %}
