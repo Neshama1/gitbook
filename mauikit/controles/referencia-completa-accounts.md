@@ -1,7 +1,7 @@
 ---
 description: >-
   MauiKit Accounts es un conjunto de componentes y clases de QtQuick diseñados
-  para facilitar el manejo y la navegación por el sistema de archivos.
+  para facilitar la gestión de cuentas.
 ---
 
 # Referencia completa: Accounts
