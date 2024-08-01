@@ -9,7 +9,7 @@ description: Consulta la funcionalidad disponible y descubre cómo implementar t
 Diseñe, cree y distribuya aplicaciones hermosas y utilizables con tecnologías KDE. Los marcos de trabajo de KDE incluyen 80 bibliotecas complementarias para programar con Qt. Todas las bibliotecas han sido probadas en situaciones reales y están documentadas exhaustivamente. Las bibliotecas de KDE se distribuyen bajo licencias LGPL o MIT.
 
 {% hint style="info" %}
-WebKit, basado originalmente en el motor de renderizado KHTML del proyecto KDE, es utilizado por Safari, Mail, App Store y muchas otras aplicacione. así como por Google Chrome anteriormente.
+WebKit, basado originalmente en el motor de renderizado KHTML del proyecto KDE, es utilizado por Safari, Mail, App Store y muchas otras aplicaciones. así como por Google Chrome anteriormente.
 {% endhint %}
 
 ### Guía de aprendizaje
