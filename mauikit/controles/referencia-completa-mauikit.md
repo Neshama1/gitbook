@@ -4,8 +4,6 @@ description: Incluye la totalidad de componentes principales.
 
 # Referencia completa: MauiKit
 
-## Controles
-
 [AbstractPlatform](https://api.kde.org/mauikit/mauikit/html/classAbstractPlatform.html)
 
 [AltBrowser](https://api.kde.org/mauikit/mauikit/html/classAltBrowser.html)
