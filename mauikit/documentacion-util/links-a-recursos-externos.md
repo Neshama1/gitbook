@@ -61,3 +61,8 @@ Todas las herramientas que necesita para crear aplicaciones de software o dispos
 ### Ejemplos
 
 {% embed url="https://doc.qt.io/qt-5/qtexamples.html" %}
+
+{% content-ref url="links-a-recursos-externos/ejemplos.md" %}
+[ejemplos.md](links-a-recursos-externos/ejemplos.md)
+{% endcontent-ref %}
+
