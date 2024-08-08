@@ -1,5 +1,5 @@
 ---
-description: Así es Qt/QML, una muestra de como lucen las aplicaciones.
+description: Qt/QML, el mejor Linux.
 ---
 
 # Qt/QML en imágenes
