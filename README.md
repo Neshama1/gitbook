@@ -1,27 +1,21 @@
 ---
 description: >-
-  Kirigami es un conjunto de componentes Qt Quick que habilita la creación de
-  aplicaciones multidispositivo, incluyendo el escritorio (PC), móvil, tablet o
-  TV.
+  Nova ofrece un sistema Linux con la más avanzada tecnología dispoble
+  respaldada por Qt y la compañia SUSE.
 ---
 
-# Qué es Kirigami
+# Nova Flow en el Dial
 
 {% hint style="info" %}
-Esta documentación es realizada desde un aspecto personal y de aprendizaje, contendrá errores, pero su consulta facilita el desarrollo de aplicaciones Kirigami y apunta al desarrollo también de aplicaciones MauiKit.
+Un equipo de 2400 empleados en SUSE marca la diferencia, junto a la fuerza de 775 miembros en The Qt Company.
 {% endhint %}
 
-Kirigami es basado en tecnología Qt/QML, compartida con Plasma Components (KDE Plasma), MauiKit (Nitrux), Silica (Sailfish OS), Lomiri UI Toolkit o Ubuntu Components (Ubuntu Touch / Lomiri), FishUI (CutefishOS / CuteOS), DtkDeclarative (Deepin), QML-Asteroid, QSkinny o Eos QML framework for webOS (televisores LG), además de Jing ControlKit (JingOS), ahora descontinuado, pero con una interesante aportación.
+Con un fuerte objetivo basado en diseño, que tratará de competir 1:1 frente a Microsoft, así como la más sencilla funcionalidad, no ofrecida habitualmente en Linux. Un sistema también enfocado en entretenimiento y valores humanos, donde la verdad y la calidad no es censurada.
 
-Esta documentación sirve de complemento a la ofrecida por KDE, disponible en:
+\
+Y por encima de todo, responsable.
 
-{% embed url="https://develop.kde.org/frameworks/kirigami/" %}
-
-{% embed url="https://develop.kde.org/docs/use/kirigami/" %}
-
-Kirigami como Qt/QML permite configurar el aspecto de las aplicaciones creadas mediante estilos Qt Quick Controls Style, logrando un mayor grado de control que con otras tecnologías.
-
-Cada estilo puede ser configurado por el usuario según decisiones de diseño como selección de colores y otras.
+Cuida tus pensamientos, cuida tus acciones. En amistad con el mundo.
 
 ### En 6 meses 1.000.000 de nuevas instalaciones de KDE
 
@@ -34,5 +28,3 @@ Cada estilo puede ser configurado por el usuario según decisiones de diseño co
 {% embed url="https://www.steamdeck.com" %}
 
 {% embed url="https://store.steampowered.com/steamdeck" %}
-
-Si lo andas buscando, comprueba en la página anterior: KDE Plasma.

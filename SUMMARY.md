@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Qué es Kirigami](README.md)
+* [Nova Flow en el Dial](README.md)
 * [Qt/QML en imágenes](qt-qml-en-imagenes/README.md)
   * [Silica](qt-qml-en-imagenes/silica/README.md)
     * [Imágenes High Fidelity](qt-qml-en-imagenes/silica/imagenes-high-fidelity.md)
