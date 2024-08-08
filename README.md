@@ -26,3 +26,7 @@ Y por encima de todo, responsable. Cuida tus pensamientos, cuida tus acciones. E
 {% embed url="https://www.steamdeck.com" %}
 
 {% embed url="https://store.steampowered.com/steamdeck" %}
+
+## Aquí
+
+Fundado en Hopeandtruth6517's Organization
