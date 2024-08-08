@@ -1,6 +1,6 @@
 ---
 description: >-
-  Nova ofrece un sistema Linux con la más avanzada tecnología dispoble
+  Nova ofrece un sistema Linux con la más avanzada tecnología disponible
   respaldada por Qt y la compañia SUSE.
 ---
 
