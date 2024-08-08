@@ -29,4 +29,4 @@ Y por encima de todo, responsable. Cuida tus pensamientos, cuida tus acciones. E
 
 ## Aquí
 
-Fundado en Hopeandtruth6517's Organization.
+Fundado en Hopeandtruth6517's Organization
