@@ -26,7 +26,7 @@ Develop once, deploy everywhere. Built on top of Qt, KDE's technologies work on 
 
 KDE Frameworks cover 80 add-on libraries for programming with Qt. All libraries have been well-tested in real world scenarios and are comprehensively documented. KDE's libraries are distributed under LGPL or MIT licenses.
 
-[Learn More](https://develop.kde.org/products/frameworks/)![](https://develop.kde.org/frameworks/kirigami/kirigami-devices.png)
+![](https://develop.kde.org/frameworks/kirigami/kirigami-devices.png)
 
 ### MauiKit / Kirigami
 
