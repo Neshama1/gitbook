@@ -18,9 +18,7 @@ Design, build and distribute beautiful, usable applications with KDE technologie
 
 ### Multi-Platform
 
-Develop once, deploy everywhere. Built on top of Qt, KDE's technologies work on every platform.
-
-Desktop Linux, Android, Windows, macOS, embedded, and more
+Develop once, deploy everywhere. Built on top of Qt, KDE's technologies work on every platform. Desktop Linux, Android, Windows, macOS, embedded, and more.
 
 ![Plasma running on a phone, laptop and TV](https://develop.kde.org/plasma-devices.svg)
 
