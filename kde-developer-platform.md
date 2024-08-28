@@ -20,7 +20,9 @@ Design, build and distribute beautiful, usable applications with KDE technologie
 
 Develop once, deploy everywhere. Built on top of Qt, KDE's technologies work on every platform. Desktop Linux, Android, Windows, macOS, embedded, and more.
 
-![Plasma running on a phone, laptop and TV](https://develop.kde.org/plasma-devices.svg)
+
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td></td><td>KDE is Ours</td><td>Create apps with your own framework. Open software is free code with high potential for opportunity</td><td><a href=".gitbook/assets/KDE-is-Ours.png">KDE-is-Ours.png</a></td></tr><tr><td></td><td><p>Tools</p><p>The latest and most advanced tools that are currently available in the software development industry</p></td><td></td><td><a href=".gitbook/assets/KDE-Promo-1.png">KDE-Promo-1.png</a></td></tr><tr><td></td><td>Empowered by Qt</td><td>Qt customers are in more than 70 different industries in over 180 countries. Qt Group employs almost 800 people globally.</td><td><a href=".gitbook/assets/Qt-promo.png">Qt-promo.png</a></td></tr></tbody></table>
 
 ## KDE Frameworks: Enhance the Qt Experience
 
