@@ -6,7 +6,7 @@ description: >-
 
 # KDE Developer Platform
 
-## KDE Developer Platform
+## It's works
 
 Design, build and distribute beautiful, usable applications with KDE technologies.
 
