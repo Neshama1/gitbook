@@ -4,7 +4,7 @@ description: >-
   Android, Windows, macOS, embedded, and more.
 ---
 
-# KDE Developer Platform
+# KDE Dev Guide
 
 ## It's works
 
@@ -14,7 +14,7 @@ Design, build and distribute beautiful, usable applications with KDE technologie
 
 ### Get Started
 
-{% embed url="https://docs.novaflowos.com/start/v/kde-developer-platform/" %}
+{% embed url="https://docs.novaflowos.com/start/kde-developer-platform" %}
 
 ### Multi-Platform
 
