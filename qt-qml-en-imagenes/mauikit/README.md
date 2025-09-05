@@ -29,7 +29,7 @@ El escritorio o interfaz para GNU/Linux KDE ha desarrollado componentes tecnoló
 [nepomuk.md](nepomuk.md)
 {% endcontent-ref %}
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td></td><td><a href="../../.gitbook/assets/kde-logo-white-blue-3000x3000.png">kde-logo-white-blue-3000x3000.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td></td><td data-object-fit="cover"><a href="../../.gitbook/assets/kde-logo-white-blue-3000x3000.png">kde-logo-white-blue-3000x3000.png</a></td></tr></tbody></table>
 
 ## Enlaces
 
