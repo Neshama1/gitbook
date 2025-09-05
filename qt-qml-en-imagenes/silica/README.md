@@ -7,7 +7,7 @@ description: >-
 
 # Silica
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td>Tidings es un cliente de noticias RSS</td><td><a href="../../.gitbook/assets/Tidings.jpg">Tidings.jpg</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Tidings es un cliente de noticias RSS</td><td><a href="../../.gitbook/assets/screenshot-screen-1.jpg">screenshot-screen-1.jpg</a></td></tr></tbody></table>
 
 {% embed url="https://youtu.be/NE7nDyMvFbI" %}
 Fernschreiber, una aplicación para la red Telegram
