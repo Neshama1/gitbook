@@ -8,7 +8,7 @@ Plasma Components proporciona controles Qt Quick para crear los plasmoides de KD
 
 Podrías incluir código de cualquier tecnología Qt/QML en tu aplicación y combinarlas si así tuviera sentido.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Plasma Mobile</td><td><a href="../../.gitbook/assets/image (2).png">image (2).png</a></td></tr><tr><td></td><td><a href="../../.gitbook/assets/image-2.png">image-2.png</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Plasma Mobile</td><td data-object-fit="cover"><a href="../../.gitbook/assets/image (2).png">image (2).png</a></td></tr><tr><td></td><td data-object-fit="cover"><a href="../../.gitbook/assets/image-2.png">image-2.png</a></td></tr></tbody></table>
 
 También es posible aplicar el estilo Plasma a tu aplicación Qt/QML Kirigami, aunque no existe una implementación completa, sino inicial.
 
