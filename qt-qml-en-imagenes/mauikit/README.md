@@ -7,7 +7,7 @@ description: >-
 
 # MauiKit
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Entorno de desarrollo integrado o IDE</td><td><a href="../../.gitbook/assets/image.avif">image.avif</a></td></tr><tr><td>Bloc de notas</td><td><a href="../../.gitbook/assets/image-1 (1).avif">image-1 (1).avif</a></td></tr><tr><td>Gestor de repositorios Git</td><td><a href="../../.gitbook/assets/image-3 (1).avif">image-3 (1).avif</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Entorno de desarrollo integrado o IDE</td><td data-object-fit="cover"><a href="../../.gitbook/assets/image.avif">image.avif</a></td></tr><tr><td>Bloc de notas</td><td data-object-fit="cover"><a href="../../.gitbook/assets/image-1 (1).avif">image-1 (1).avif</a></td></tr><tr><td>Gestor de repositorios Git</td><td data-object-fit="cover"><a href="../../.gitbook/assets/image-3 (1).avif">image-3 (1).avif</a></td></tr></tbody></table>
 
 ## LGPL 3
 
@@ -15,7 +15,7 @@ MauiKit es un proyecto gratuito y de código abierto y puede ser usado librement
 
 ## En el aspecto visual
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Desenfoque o blur y transparencia son posibles en MauiKit, así como CSD o Client Side Decoration y sombras o configuración de estilo y color.</td><td><a href="../../.gitbook/assets/promo-1-1536x1221.jpg">promo-1-1536x1221.jpg</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Desenfoque o blur y transparencia son posibles en MauiKit, así como CSD o Client Side Decoration y sombras o configuración de estilo y color.</td><td data-object-fit="cover"><a href="../../.gitbook/assets/promo-1-1536x1221.jpg">promo-1-1536x1221.jpg</a></td></tr></tbody></table>
 
 ## MauiKit añade las ventajas de la tecnología KDE
 
