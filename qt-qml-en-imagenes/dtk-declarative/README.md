@@ -7,7 +7,7 @@ description: >-
 
 # Dtk Declarative
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><p>Deepin Tweak es una aplicación Dtk Declarative</p><p>Jeremy Bishop</p></td><td><a href="../../.gitbook/assets/christina-wocintechchat-com-W4Acv7uG_og-unsplash.jpg">christina-wocintechchat-com-W4Acv7uG_og-unsplash.jpg</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><p>Deepin Tweak es una aplicación Dtk Declarative</p><p>Jeremy Bishop</p></td><td data-object-fit="cover"><a href="../../.gitbook/assets/christina-wocintechchat-com-W4Acv7uG_og-unsplash.jpg">christina-wocintechchat-com-W4Acv7uG_og-unsplash.jpg</a></td></tr></tbody></table>
 
 Deepin 23 es la primera versión de Deepin que incorporará Dtk Declarative, siendo un componente clave.
 
